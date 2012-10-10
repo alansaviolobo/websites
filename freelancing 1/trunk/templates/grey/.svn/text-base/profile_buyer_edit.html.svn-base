@@ -1,0 +1,72 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top"><br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+             </tr>
+            <tr>
+              <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="escrow.php">{LANG_ESCROWM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="upgrade.php">{LANG_UPGRADES}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+            </tr>
+          </table></td>
+          <td valign="top">
+            <form name="form1" method="post" action="profile_edit.php">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="normal"><strong>{LANG_USERNAME}</strong><br>
+        {USERNAME} <br>
+        <br>
+        <strong>{LANG_NAMECOM}</strong><br>
+        <input name="name" type="text" id="name" value="{NAME}">
+        <br>
+        <br>
+      <strong>{LANG_EMAIL}</strong><br>
+      <input name="email" type="text" id="email" value="{EMAIL}">
+      <br>
+      <br>
+	  IF("{LANG_SEL}"=="1"){
+      <strong>{LANG_LANGUAGE}</strong><br>
+      <select name="lang" id="lang">
+	  {LOOP: LANGS}
+	  <option value="{LANGS.value}" {LANGS.selected}>{LANGS.name}</option>
+	  {/LOOP: LANGS}
+      </select>
+      <br>
+      <br>{:IF}
+ {LOOP: CUSTOMFIELDS}
+<strong>{CUSTOMFIELDS.title}</strong><br />
+          IF("{CUSTOMFIELDS.type}"=="text"){<input name="custom[{CUSTOMFIELDS.id}]" type="text" id="custom[{CUSTOMFIELDS.id}]" size="30" maxlength="{CUSTOMFIELDS.maxlength}" value="{CUSTOMFIELDS.default}">{:IF}
+          IF("{CUSTOMFIELDS.type}"=="select"){{CUSTOMFIELDS.selectbox}{:IF}
+<br /><br />
+        {/LOOP: CUSTOMFIELDS}
+      
+        <input type="submit" name="Submit" value="Edit Details"></td>
+                </tr>
+              </table>
+          </form></td>
+        </tr>
+      </table>
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

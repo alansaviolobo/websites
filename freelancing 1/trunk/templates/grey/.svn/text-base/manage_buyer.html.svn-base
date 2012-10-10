@@ -1,0 +1,193 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top">    <br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+             </tr>
+            <tr>
+              <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="escrow.php">{LANG_ESCROWM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="upgrade.php">{LANG_UPGRADES}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+            </tr>
+          </table></td>
+        <td>          <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><span class="header1">{LANG_HELLO}, {USERNAME} IF("{RATING}" != "0"){(<a href="reviews.php?id={USER_ID}&type=buyer"><img src="templates/{TPL_NAME}/images/rating_{RATING}.gif" border="0"></a>){:IF}</span></td>
+              <td align="right"><span class="header1">{LANG_CURBALANCE}: {BALANCE}</span></td>
+            </tr>
+          </table>
+          <br>
+            <br>
+            <span class="title2">{LANG_PROJICREATED}</span><br>
+            <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="padding-top:3px;">
+              <tr bgcolor="#C7C7C7" class="normal">
+                <td width="200" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_PROJNAME}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td width="100" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_STATUS}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td width="90" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_BIDS}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_OPTIONS}</strong></td>
+              </tr>
+        {LOOP: PROJECTS}
+        <tr class="normal">
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;"><a href="project.php?id={PROJECTS.id}">{PROJECTS.title}</a></td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;">{PROJECTS.status}</td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;">{PROJECTS.bids}</td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;"><select name="menu1" onChange="MM_jumpMenu('parent',this,0)" style="width:140px;">
+    <option value="">{LANG_SELOPTIONS}</option>
+    IF("{PROJECTS.bids}" != "0"){<option value="pick.php?id={PROJECTS.id}">{LANG_PICKPRO}</option>{:IF}
+    <option value="extend.php?id={PROJECTS.id}">{LANG_EXTEND}</option>
+    <option value="edit.php?id={PROJECTS.id}">{LANG_EDIT}</option>
+    <option value="close.php?id={PROJECTS.id}">{LANG_CLOSE}</option>
+  </select></td>
+        </tr>
+        <tr>
+          <td colspan="7" height="1" bgcolor="#C7C7C7"></td>
+        </tr>
+        {/LOOP: PROJECTS}
+            </table>
+            <br>
+            <span class="title2">{LANG_PASTPROJ}</span><br>
+            <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="padding-top:3px;">
+              <tr class="normal">
+                <td width="200" height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_PROJNAME}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td width="100" height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_PROJWINNER}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td width="90" height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_BIDPRICE}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td bgcolor="#C7C7C7" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_OPTIONS}</strong></td>
+				IF("{PAY_TYPE}"=="1"){<td width="1" bgcolor="#FFFFFF"></td>
+				<td width="20" bgcolor="#C7C7C7" height="30" style="padding-left:5px;"><img src="templates/{TPL_NAME}/images/paid_on.gif" width="9" height="12"></td>{:IF}
+				<td width="1" bgcolor="#FFFFFF"></td>
+				<td width="20" bgcolor="#C7C7C7" height="30" style="padding-left:5px;"><img src="templates/{TPL_NAME}/images/feedback_on.gif" width="14" height="15"></td>
+              </tr>
+        {LOOP: RATE}
+        <tr class="normal">
+          <td height="30" bgcolor="#F3F3F3" style="padding-top:4px;padding-left:5px;"><a href="project.php?id={RATE.project_id}">{RATE.project_title}</a></td>
+          <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-top:4px;padding-left:5px;"><a href="profile.php?id={RATE.provider_id}&type=provider">{RATE.username}</a></td>
+          <td width="1" bgcolor="#FFFFFF"></td>
+		  <td height="30" bgcolor="#F3F3F3" style="padding-top:4px;padding-left:5px;">{CURRENCY_SIGN}{RATE.winbid}</td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-top:4px;padding-left:5px;"><select name="menu1" onChange="MM_jumpMenu('parent',this,0)" style="width:140px;">
+    <option value="">Select Option</option>
+    IF("{RATE.provider_rated}"=="0"){<option value="rate.php?id={RATE.project_id}">{LANG_LEAVEFEEDBACK}</option>{:IF}
+    IF("{RATE.paid}"=="0"){<option value="project_pay.php?id={RATE.project_id}">{LANG_PAYPROJECT}</option>{:IF}
+  </select>
+</td>
+				IF("{PAY_TYPE}"=="1"){<td width="1" bgcolor="#FFFFFF"></td>
+				<td bgcolor="#F3F3F3" height="30" style="padding-left:5px;">{:IF}
+				IF("{RATE.paid}"=="0"){<a href="project_pay.php?id={RATE.project_id}"><img src="templates/{TPL_NAME}/images/paid_off.gif" width="9" height="12" border="0"></a>{:IF}
+				IF("{RATE.paid}"=="1"){<img src="templates/{TPL_NAME}/images/paid_on.gif" width="9" height="12" border="0">{:IF}
+				IF("{PAY_TYPE}"=="1"){</td>{:IF}
+				<td width="1" bgcolor="#FFFFFF"></td>
+				<td bgcolor="#F3F3F3" height="30" style="padding-left:5px;">
+				IF("{RATE.provider_rated}"=="0"){<a href="rate.php?id={RATE.project_id}"><img src="templates/{TPL_NAME}/images/feedback_off.gif" width="14" height="15" border="0"></a>{:IF}
+				IF("{RATE.provider_rated}"=="1"){<a href="reviews.php?id={RATE.provider_id}&type=provider"><img src="templates/{TPL_NAME}/images/feedback_on.gif" width="14" height="15" border="0" alt=""></a>{:IF}
+				</td>
+		  </tr>
+        <tr height="1">
+          <td colspan="IF("{PAY_TYPE}"=="1"){11{:IF}IF("{PAY_TYPE}"=="0"){9{:IF}" height="1" bgcolor="#C7C7C7"></td>
+        </tr>
+        {/LOOP: RATE}
+          </table>
+          <br>
+          <br>
+          <span class="title2">{LANG_JOBSICREATED}</span><br>
+          <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="padding-top:3px;">
+            <tr bgcolor="#C7C7C7" class="normal">
+              <td height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_JOBTITLE}</strong></td>
+			  <td width="1" bgcolor="#FFFFFF"></td>
+              <td width="217" height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_OPTIONS}</strong></td>
+            </tr>
+  {LOOP: JOBS}
+  <tr class="normal">
+    <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;"><a href="job.php?id={JOBS.id}">{JOBS.title}</a></td>
+	<td width="1" bgcolor="#FFFFFF"></td>
+    <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;"><select name="menu1" onChange="MM_jumpMenu('parent',this,0)" style="width:140px;">
+    <option value="">{LANG_SELOPTIONS}</option>
+    <option value="edit.php?id={JOBS.id}&type=job">{LANG_EDIT}</option>
+    <option value="close.php?id={JOBS.id}&type=job">{LANG_CLOSE}</option>
+  </select></td>
+  </tr>
+  <tr>
+    <td colspan="3" height="1" bgcolor="#C7C7C7"></td>
+  </tr>
+  {/LOOP: JOBS}
+          </table>
+          <br>
+         <span class="title2">{LANG_PASTJOBS}</span><br>
+          <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="padding-top:3px;">
+            <tr bgcolor="#C7C7C7" class="normal">
+              <td height="30" style="padding-left:5px;" bgcolor="#C7C7C7"><strong style="color:#666666;">{LANG_JOBTITLE}</strong></td>
+              </tr>
+  {LOOP: PASTJOBS}
+  <tr class="normal">
+    <td height="30" bgcolor="#F3F3F3"><a href="job.php?id={PASTJOBS.id}" style="padding-left:5px;">{PASTJOBS.title}</a></td>
+    </tr>
+  <tr height="1">
+    <td height="1" bgcolor="#C7C7C7"></TD>
+  </tr>
+  {/LOOP: PASTJOBS}
+          </table>
+          <br>
+          <span class="title2">Pending Escrow Payments</span><br>
+          <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="padding-top:3px;">
+            <tr bgcolor="#C7C7C7" class="normal">
+              <td width="200" height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_PROVIDERU}</strong></td>
+			  <td width="1" bgcolor="#FFFFFF"></td>
+			  <td width="150" bgcolor="#C7C7C7" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_AMOUNT}</strong></td>
+			  <td width="1" bgcolor="#FFFFFF"></td>
+			  <td bgcolor="#C7C7C7" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_OPTIONS}</strong></td>
+            </tr>
+  {LOOP: ESCROW}
+  <tr class="normal">
+    <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;">{ESCROW.from_nick}</td>
+	<td width="1" bgcolor="#FFFFFF"></td>
+	<td height="30" bgcolor="#F3F3F3" style="padding-left:5px;">{CURRENCY_SIGN}{ESCROW.amount}</td>
+	<td width="1" bgcolor="#FFFFFF"></td>
+	<td height="30" bgcolor="#F3F3F3" style="padding-left:5px;">
+    IF("{ESCROW.from}"=="pro"){<a href="escrow.php?cancel={ESCROW.id}">Cancel</a>{:IF}
+    IF("{ESCROW.from}"=="buy"){<a href="escrow.php?approve={ESCROW.id}">Approve</a>{:IF}
+    </td>
+  </tr>
+  <tr height="1">
+    <td colspan="5" height="1" bgcolor="#C7C7C7"></td>
+  </tr>
+  {/LOOP: ESCROW}
+    </table>
+          
+          </td>
+      </tr>
+    </table>
+    
+    
+    
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

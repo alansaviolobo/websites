@@ -1,0 +1,659 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm
+END
+buyer_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/buyer_edit.php
+END
+escrow_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/escrow_view.php
+END
+jobtype_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobtype_delete.php
+END
+buyer_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/buyer_add.php
+END
+admin_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/admin_add.php
+END
+xml_links.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/xml_links.php
+END
+profit.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/profit.php
+END
+templates_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/templates_edit.php
+END
+faq_cat_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_cat_edit.php
+END
+transaction_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/transaction_settings.php
+END
+faq_cat_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_cat_add.php
+END
+xml_manage.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/xml_manage.php
+END
+buyer_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/buyer_delete.php
+END
+attachments.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/attachments.php
+END
+faq_entry_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_entry_edit2.php
+END
+custom_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/custom_edit.php
+END
+quote_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/quote_delete.php
+END
+faq_cat_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_cat_delete.php
+END
+attachments_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/attachments_edit.php
+END
+provider_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/provider_edit2.php
+END
+settings2.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/settings2.php
+END
+custom_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/custom_add.php
+END
+jobs_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobs_search.php
+END
+projects_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/projects_view.php
+END
+bids_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/bids_edit.php
+END
+jobs_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobs_view.php
+END
+help.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/help.php
+END
+projcat_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/projcat_edit2.php
+END
+jobcat_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobcat_edit2.php
+END
+project_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/project_search.php
+END
+template_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/template_settings.php
+END
+custom_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/custom_delete.php
+END
+faq_entry_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_entry_edit.php
+END
+subscriptions_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/subscriptions_view.php
+END
+ban_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/ban_edit.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/index.php
+END
+faq_entry_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_entry_delete.php
+END
+projects_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/projects_delete.php
+END
+usergroup_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/usergroup_delete.php
+END
+buyer_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/buyer_edit2.php
+END
+print_trans_info.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/print_trans_info.php
+END
+admin_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/admin_edit2.php
+END
+upgrades_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/upgrades_edit.php
+END
+content_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/content_edit.php
+END
+jobs_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobs_delete.php
+END
+content_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/content_add.php
+END
+upgrades_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/upgrades_add.php
+END
+usergroup_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/usergroup_edit2.php
+END
+ban_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/ban_delete.php
+END
+jobtype_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobtype_add.php
+END
+templates_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/templates_edit2.php
+END
+faq_cat_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_cat_edit2.php
+END
+subscriptions_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/subscriptions_delete.php
+END
+content_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/content_delete.php
+END
+upgrades_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/upgrades_delete.php
+END
+transaction_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/transaction_add.php
+END
+admin_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/admin_edit.php
+END
+subscriptions_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/subscriptions_edit2.php
+END
+rules_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/rules_edit.php
+END
+payment_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/payment_delete.php
+END
+settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/settings.php
+END
+log_viewer.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/log_viewer.php
+END
+quote_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/quote_edit.php
+END
+rules_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/rules_add.php
+END
+usergroup_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/usergroup_add.php
+END
+payment_queue2.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/payment_queue2.php
+END
+custom_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/custom_view.php
+END
+bids_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/bids_search.php
+END
+configuration.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/configuration.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/login.php
+END
+logout.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/logout.php
+END
+transaction_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/transaction_search.php
+END
+admin_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/admin_delete.php
+END
+bids_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/bids_view.php
+END
+rules_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/rules_delete.php
+END
+transaction_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/transaction_view.php
+END
+payment_queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/payment_queue.php
+END
+quotes_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/quotes_edit.php
+END
+search_users.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/search_users.php
+END
+ban_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/ban_view.php
+END
+payment_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/payment_settings.php
+END
+attachments_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/attachments_delete.php
+END
+projects_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/projects_edit.php
+END
+provider_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/provider_edit.php
+END
+usergroup_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/usergroup_edit.php
+END
+faq_entry_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/faq_entry_add.php
+END
+content_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/content_edit2.php
+END
+upgrades_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/upgrades_edit2.php
+END
+provider_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/provider_add.php
+END
+jobs_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobs_edit.php
+END
+transactions_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/transactions_view.php
+END
+jobtype_edit2.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobtype_edit2.php
+END
+bids_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/bids_delete.php
+END
+quote_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/quote_add.php
+END
+projcat_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/projcat_edit.php
+END
+jobcat_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobcat_edit.php
+END
+search_users2.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/search_users2.php
+END
+class.menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/class.menu.php
+END
+ban_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/ban_add.php
+END
+jobcat_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobcat_add.php
+END
+projcat_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/projcat_add.php
+END
+provider_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/provider_delete.php
+END
+rule_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/rule_edit.php
+END
+jobtype_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobtype_edit.php
+END
+admin_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/admin_view.php
+END
+payment_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/payment_edit.php
+END
+attachments_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/attachments_add.php
+END
+jobcat_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/jobcat_delete.php
+END
+projcat_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/adm/projcat_delete.php
+END

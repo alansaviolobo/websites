@@ -1,0 +1,50 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>
+      <form name="form1" method="post" action="">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr class="normal">
+            <td width="150">{LANG_NAMECOM}:</td>
+            <td><input name="name" type="text" id="name" size="42" value="{NAME}" style="width:300px;"></td>
+          </tr>
+          <tr class="normal">
+            <td>{LANG_YEMAIL}:</td>
+            <td><input name="email" type="text" id="email" size="42" value="{EMAIL}" style="width:300px;"></td>
+          </tr>
+          <tr class="normal">
+            <td>{LANG_YUSERNAME}:</td>
+            <td><input name="username" type="text" id="username" size="42" value="{USERNAME}" style="width:300px;"></td>
+          </tr>
+          <tr class="normal">
+            <td>{LANG_ACCTYPE}:</td>
+            <td><select name="type" id="type" style="width:300px;">
+                <option IF("{TYPE}" == "provider"){selected}>{LANG_PROVIDERU}</option>
+                <option IF("{TYPE}" == "buyer"){selected}>{LANG_BUYERU}</option>
+            </select></td>
+          </tr>
+          <tr class="normal">
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+          <tr class="normal">
+            <td>{LANG_SUBJECT}:</td>
+            <td><input name="subject" type="text" id="subject" size="42" style="width:300px;"></td>
+          </tr>
+          <tr class="normal">
+            <td valign="top">{LANG_MESSAGE}:</td>
+            <td><textarea name="message" cols="32" rows="6" id="message" style="width:300px;"></textarea></td>
+          </tr>
+          <tr class="normal">
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" name="Submit" value="{LANG_CONTUS}"></td>
+          </tr>
+        </table>
+      </form>
+      <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

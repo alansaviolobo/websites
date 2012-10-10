@@ -1,0 +1,52 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>
+      <span class="project_title_header">&nbsp;{LANG_JOBTITLE}:</span> <span class="project_title">{JOB_TITLE}</span><br>
+      <span class="normal"><strong>&nbsp;{LANG_ID}:</strong> {JOB_ID}</span><br>
+      <br>
+      <table width="100%" border="0" cellpadding="4" cellspacing="3">
+        <tr class="normal" valign="top">
+          <td width="180"><strong>{LANG_JOBCREATOR}:</strong></td>
+          <td><a href="{JOB_CREATOR_LINK}">{JOB_CREATOR}</a></td>
+        </tr>
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td width="180"><strong>{LANG_COMPANY}:</strong></td>
+          <td>{JOB_COMPANY}</td>
+        </tr>
+        <tr class="normal">
+          <td><strong>{LANG_CATEGORY}:</strong></td>
+          <td>{JOB_CAT}</td>
+        </tr>
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td><strong>{LANG_LOCATION}:</strong></td>
+          <td>IF("{JOB_LOCATION}" == "0"){Online{:IF}
+		   	  IF("{JOB_LOCATION}" == "1"){On-Site{:IF}
+		  </td>
+        </tr>
+        <tr class="normal">
+          <td><strong>{LANG_COUNTRY}:</strong></td>
+          <td>{JOB_COUNTRY}</td>
+        </tr>
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td><strong>{LANG_JOBTYPE}:</strong></td>
+          <td>{JOB_TYPE}</td>
+        </tr>
+        <tr class="normal">
+          <td><strong>{LANG_SALARY}:</strong></td>
+          <td>{JOB_SALARY}</td>
+        </tr>
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td><strong>{LANG_DESC}:</strong></td>
+          <td>{JOB_DESC}</td>
+        </tr>
+        IF("{JOB_CONTACT}"!=""){
+        <tr class="normal" valign="top">
+          <td><strong>{LANG_CONDET}:</strong></td>
+          <td>{JOB_CONTACT}</td>
+        </tr>
+        {:IF}
+      </table>
+      <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

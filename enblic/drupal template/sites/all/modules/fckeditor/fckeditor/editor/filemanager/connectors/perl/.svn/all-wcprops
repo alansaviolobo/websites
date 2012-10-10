@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl
+END
+config.pl
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/config.pl
+END
+io.pl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/io.pl
+END
+upload_fck.pl
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/upload_fck.pl
+END
+basexml.pl
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/basexml.pl
+END
+upload.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/upload.cgi
+END
+util.pl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/util.pl
+END
+commands.pl
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/commands.pl
+END
+connector.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/maya_socialtheme/!svn/ver/55/drupal%20template/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/perl/connector.cgi
+END

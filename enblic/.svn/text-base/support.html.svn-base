@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href = "css/styles.css"  media="screen"  />
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href = "css/ie.css"  media="screen"  />
+		<![endif]-->
+	</head>
+	<body>
+		<div class="header-portion">
+			<div class="content-part">
+				<div class="align-vertical-center absolute-right">
+					<ul>
+						<li><a href="#">Einloggen</a>
+						</li>
+						<li><a href="#">Mein Konto</a>
+						</li>
+						<li class="last"><a href="#">Deutsch(DE)</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<div class="body-portion">
+			<div class="content-part">
+				<div class="menu-portion">
+					<div class="menu-content">	
+						<div class="main-menu">
+							<ul class="absolute-right">
+								<li><a href="#">HOME</a>
+								</li>
+								<li><a href="#">NEWS</a>
+								</li>
+								<li><a href="#">COMMUNITY</a>
+								</li>
+								<li><a href="#">TURNIERE</a>
+								</li>
+								<li><a href="#">SHOP</a>
+								</li>
+								<li class="selected last"><a href="#">SUPPORT</a>
+								</li>
+							</ul>
+						
+						</div>
+						<div class="sub-menu">
+							<ul  class="absolute-left">
+								<li class="first selected"><a href="#">FAQ</a>
+								</li>
+								<li><a href="#">KONTAKT</a>
+								</li>
+								<li class="last"><a href="#">DOWNLOAD</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>		
+				<div class="news-content">
+					<div class="news-content-left">
+						<div class="content-block">
+							<div class="outer-title-border">
+								<div class="inner-title-border">
+									FAQ
+								</div>
+							</div>
+							<div class="outer-content-border">
+								<div class="inner-content-border">
+									<div class="news-holder">
+										<div class="news-update"> 
+											<ul>
+												<li>we learn ....</li>
+												<li>we learn ....</li>
+												<li>we learn ....</li>
+												<li>we learn ....</li>
+												<li>we learn ....</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="content-block">
+							<div class="outer-title-border">
+								<div class="inner-title-border">
+									KONTAKT
+								</div>
+							</div>
+							<div class="outer-content-border">
+								<div class="inner-content-border">
+									<div class="inner-content-border-contact">
+											<ul>
+												<li>Support-Anfragen bitte an:</li>
+												<li><a href="#">support@efusion-x.com</a></li>
+											</ul>
+											<ul>
+												<li>Presse-Anfragen bitte an:</li>
+												<li><a href="#">press@efusion-x.com</a></li>
+											</ul>
+											<ul>
+												<li>Sonstige-Anfragen bitte an:</li>
+												<li><a href="#">info@efusion-x.com</a></li>
+												
+											</ul>
+												
+									</div>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<div class="content-part">
+				<div class="footer-block">
+					<div class="outer-title-border">
+						<div class="inner-title-border">
+							<ul>
+								<li><a href="#">ABG</a></li>
+								<li><a href="#">Datenschutz</a></li>
+								<li><a href="#">Urheberrecht</a></li>
+								<li><a href="#">Nutzervereinbarungen</a></li>
+								<li><a href="#">Impressum</a></li>
+								<li><a href="#">Jugendschutz</a></li>
+								<li><a href="#">Gesundheit</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="outer-content-border">
+						<div class="inner-content-border">		
+							<div class="footer-message">
+								<div class="footer-logo"></div>
+								<div class="copyrights">
+									© 2010 COWON / EFUSION X Limited. Alle Rechte vorbehalten. COWON Logos und Designs sind Warenzeichen oder eingetragene Warenzeichen der COWON Corporation. EFUSION-X Logos und Designs sind Warenzeichen oder eingetragene Warenzeichen der 
+EFUSION X LIMITED. Alle anderen eingetragenen Warenzeichen oder Warenzeichen sind das Eigentum ihrer jeweiligen Besitzer. 
+Firmennummer: XXXXX. Mehrwertsteuernummer: XXXXXXXXXX.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+	</div>
+	
+	</body>
+</html>

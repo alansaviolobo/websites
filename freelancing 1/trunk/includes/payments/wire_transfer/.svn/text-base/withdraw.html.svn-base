@@ -1,0 +1,95 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top"><br>
+      <form name="form1" method="post" action="">
+        <span class="header1">Withdraw Money</span><br>
+        Please provide the following back information: <br>
+        <br>
+        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="bottom">Account Holder's Name:</td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="account_holders_name" type="text" id="account_holders_name" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank Name: </td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="bank_name" type="text" id="bank_name" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank Street Address: </td>
+          </tr>
+          <tr>
+            <td height="60"><input name="bank_street1" type="text" id="bank_street1" style="width:300px;">
+            <br>
+            <input name="bank_street2" type="text" id="bank_street2" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank City: </td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="bank_city" type="text" id="bank_city" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank State/Province: </td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="bank_state" type="text" id="bank_state" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank Country:</td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="bank_country" type="text" id="bank_country" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank Zip/Postal Code: </td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="bank_zip" type="text" id="bank_zip" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank Account Number: </td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="bank_number" type="text" id="bank_number" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank Routing/Swift Code: </td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><input name="bank_swift" type="text" id="bank_swift" style="width:300px;"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Bank Account Type: </td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom"><select name="account_type" id="account_type" style="width:300px;">
+              <option selected>Personal Checking</option>
+              <option>Personal Savings</option>
+              <option>Business Checking</option>
+              <option>Business Savings</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td height="30" valign="bottom">Additional Information: </td>
+          </tr>
+          <tr>
+            <td height="140" valign="bottom"><textarea name="bank_adit" cols="40" rows="7" id="bank_adit" style="width:300px;"></textarea></td>
+          </tr>
+        </table>
+        <br>
+        <br>
+<input type="hidden" name="payment_id" id="payment_id" value="{PAYMENT_ID}">
+<input type="hidden" name="amount" id="amount" value="{AMOUNT}">
+
+<br>
+
+<input name="Submit" type="submit" id="Submit" value="Withdraw">
+      </form>
+      <br>    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

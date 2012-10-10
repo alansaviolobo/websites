@@ -1,0 +1,14 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">{location} &gt; Cities</div>
+<div class="post_div"><a href="{site_url}/listings/post">[post]</a></div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<form action="{site_url}/listings/add_mult/cities/" method="post">
+{city_list}
+<div class="city_div" style="color: #082139;"><input
+	name="cities[]" type="checkbox" value="{city_id}" checked="checked" />{city_name}</div>
+{/city_list}
+<div style="clear: both; padding-top: 15px;"><input type="submit"
+	value=" Submit " /></div>
+</form>

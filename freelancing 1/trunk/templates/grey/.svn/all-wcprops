@@ -1,0 +1,461 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey
+END
+overall_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/overall_header.html
+END
+project_pay.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/project_pay.html
+END
+email_signup_details.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_signup_details.html
+END
+email_project_notification.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_project_notification.html
+END
+topusers.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/topusers.html
+END
+search_results.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/search_results.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/error.html
+END
+board_post.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/board_post.html
+END
+users_providers.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/users_providers.html
+END
+escrow.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/escrow.html
+END
+manage_provider.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/manage_provider.html
+END
+retract.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/retract.html
+END
+deposit.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/deposit.html
+END
+message_forward.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/message_forward.html
+END
+signup_provider.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/signup_provider.html
+END
+quotes.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/quotes.html
+END
+email_report.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_report.html
+END
+forgot_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/forgot_form.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/message.html
+END
+email_project_accepted_pro.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_project_accepted_pro.html
+END
+pick.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/pick.html
+END
+board.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/board.html
+END
+extend.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/extend.html
+END
+projects.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/projects.html
+END
+withdraw.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/withdraw.html
+END
+email_signup_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_signup_confirm.html
+END
+html_content_no.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/html_content_no.html
+END
+email_project_bid.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_project_bid.html
+END
+contact.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/contact.html
+END
+rate.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/rate.html
+END
+jobs.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/jobs.html
+END
+manage_buyer.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/manage_buyer.html
+END
+bid.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/bid.html
+END
+subscriptions.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/subscriptions.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/login.html
+END
+private_inbox.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/private_inbox.html
+END
+email_pm.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_pm.html
+END
+email_project_pick.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_project_pick.html
+END
+private_send.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/private_send.html
+END
+subscription.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/subscription.html
+END
+create_project.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/create_project.html
+END
+users_buyers.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/users_buyers.html
+END
+create_job.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/create_job.html
+END
+reviews_provider.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/reviews_provider.html
+END
+paypal_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/paypal_add.html
+END
+html_content.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/html_content.html
+END
+faq_cat.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/faq_cat.html
+END
+subscription_options.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/subscription_options.html
+END
+forgot.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/forgot.html
+END
+message_noback.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/message_noback.html
+END
+email_contact.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_contact.html
+END
+email_board_post.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_board_post.html
+END
+blocked.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/blocked.html
+END
+email_project_denied_buy.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_project_denied_buy.html
+END
+search.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/search.html
+END
+faq.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/faq.html
+END
+profile_provider.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/profile_provider.html
+END
+report.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/report.html
+END
+signup_buyer.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/signup_buyer.html
+END
+profile_provider_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/profile_provider_edit.html
+END
+overall_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/overall_footer.html
+END
+email_project_accepted_buy.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/email_project_accepted_buy.html
+END
+transfer.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/transfer.html
+END
+edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/edit.html
+END
+faq_entry.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/faq_entry.html
+END
+reviews_buyer.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/reviews_buyer.html
+END
+accept.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/accept.html
+END
+signup.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/signup.html
+END
+private_read.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/private_read.html
+END
+close.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/close.html
+END
+profile_buyer.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/profile_buyer.html
+END
+project.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/project.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/index.html
+END
+transactions.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/transactions.html
+END
+job.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/job.html
+END
+profile_buyer_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/templates/grey/profile_buyer_edit.html
+END

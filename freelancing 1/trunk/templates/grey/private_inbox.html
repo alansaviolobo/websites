@@ -1,0 +1,62 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top">    <br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+             </tr>
+            <tr>
+              <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+            </tr>
+          </table></td>
+        <td valign="top"><form action="private.php?cmd=delete" method="post" name="form1" style="padding:0px;"><span class="title2">{LANG_INBOX}</span><br>
+          <br>
+            <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="padding-top:3px;">
+              <tr bgcolor="#C7C7C7" class="normal">
+                <td width="30" height="30" style="padding-left:5px;"></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_SUBJECT}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td width="100" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_FROM}</strong></td>
+				<td width="1" bgcolor="#FFFFFF"></td>
+                <td width="150" height="30" bgcolor="#C7C7C7" style="padding-left:5px;"><strong style="color:#666666;">{LANG_DATE}</strong></td>
+              </tr>
+        {LOOP: MESSAGES}
+        <tr class="normal" style="IF("{MESSAGES.read}"=="0"){font-weight:bold;{:IF}">
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;"><input type="checkbox" name="id[]" value="{MESSAGES.id}"></td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;"><a href="private.php?cmd=read&id={MESSAGES.id}">{MESSAGES.subject}</a></td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;"><a href="profile.php?id={MESSAGES.from_id}&type={MESSAGES.from_type}">{MESSAGES.from_username}</a></td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" bgcolor="#F3F3F3" style="padding-left:5px;">{MESSAGES.date}</td>
+        </tr>
+        <tr>
+          <td colspan="7" height="1" bgcolor="#C7C7C7"></td>
+        </tr>
+        {/LOOP: MESSAGES}
+		IF("{MESSAGE_COUNT}"=="0"){<tr><td colspan="7" align="center" height="50"><strong>{LANG_NOMESS}</strong></td></tr><tr><td colspan="7" height="1" bgcolor="#C7C7C7"></td></tr>{:IF}
+            </table>
+            <br>
+            <input name="delete" type="image" id="delete" src="templates/{TPL_NAME}/images/delete.gif" width="76" height="16" border="0">
+          <br></form></td>
+      </tr>
+    </table>
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

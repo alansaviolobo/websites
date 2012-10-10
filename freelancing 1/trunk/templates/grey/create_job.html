@@ -1,0 +1,91 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><form action="" method="post" enctype="multipart/form-data" name="form1">
+      {LOOP: ERRORS}<span class="error">- {ERRORS.message}</span><br>
+      {/LOOP: ERRORS} <br>
+      <table border="0" cellspacing="0" cellpadding="4" class="normal">
+        <tr>
+          <td><strong>{LANG_USERNAME}</strong></td>
+        </tr>
+        <tr>
+          <td>{USERNAME}</td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_JOBTITLE}</strong></td>
+        </tr>
+        <tr>
+          <td><input name="job_title" type="text" id="job_title" size="40" maxlength="200"></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_COMPNAME}</strong></td>
+        </tr>
+        <tr>
+          <td><input name="company_name" type="text" id="company_name" size="40" maxlength="200"></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_JOBCAT}</strong></td>
+        </tr>
+        <tr>
+          <td><select name="job_cat" id="select3">
+		  {LOOP: JOBCATS}
+            
+            <option value="{JOBCATS.id}">{JOBCATS.title}</option>
+		  {/LOOP: JOBCATS}
+          </select></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_JOBLOC}</strong></td>
+        </tr>
+        <tr>
+          <td><input name="job_location" type="radio" value="0" checked>
+ {LANG_ONLINE}
+<br>
+            <input name="job_location" type="radio" value="1">
+{LANG_ONSITE}</td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_COUNTRY} {LANG_COUNTRYLOC}</strong></td>
+        </tr>
+        <tr>
+          <td><select name="job_country" id="job_country">
+		  {LOOP: COUNTRIES}
+            <option IF("{COUNTRIES.title}"=="United States"){selected{:IF}>{COUNTRIES.title}</option>
+          {/LOOP: COUNTRIES}
+                              </select></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_JOBTYPE}</strong></td>
+        </tr>
+        <tr>
+          <td>{LOOP: JOBTYPES}<input name="jobtypes" type="radio" value="{JOBTYPES.id}">{JOBTYPES.title}<br>{/LOOP: JOBTYPES}</td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_SALARY}</strong></td>
+        </tr>
+        <tr>
+          <td><input name="job_salary" type="text" id="job_salary" size="40"></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_JOBDESC}</strong></td>
+        </tr>
+        <tr>
+          <td><textarea name="job_description" cols="50" rows="8" id="job_description"></textarea></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_CONDET}</strong></td>
+        </tr>
+        <tr>
+          <td><textarea name="job_contact" cols="50" rows="8" id="job_contact"></textarea></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="Submit" value="{LANG_SUBMIT}"></td>
+        </tr>
+      </table>
+    </form><br>
+    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

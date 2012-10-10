@@ -1,0 +1,122 @@
+a:hover {
+    text-decoration: none;
+    color: #000000
+}
+
+#logo{
+	position:relative;
+}
+
+.content {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-decoration: none;
+    text-align: justify
+}
+
+.link {
+    text-decoration: none;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: #0000FF
+}
+
+.head {
+    font-family: tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #000066;
+    text-decoration: none
+}
+
+.botlink {
+    text-decoration: none;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: #FFFFFF
+}
+
+.address {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-decoration: none
+}
+
+.menu {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-decoration: none
+}
+
+.copyright {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-decoration: none;
+    color: #3C1B69
+}
+
+.heading {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-decoration: none
+}
+
+.omp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000066
+}
+
+.ompheading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000066;
+    font-weight: bold
+}
+
+.ompfill {
+    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000066
+}
+
+.imgthumb {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.imgthumb a {
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.imgthumb img {
+    text-decoration: none;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: #999999;
+    border-bottom-color: #666666;
+    border-top-style: none;
+    border-left-style: none;
+}
+
+.noborder {
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    text-decoration: none;
+}
+
+.noborder img {
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}

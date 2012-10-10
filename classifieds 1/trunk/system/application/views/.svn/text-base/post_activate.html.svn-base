@@ -1,0 +1,18 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">Post an Ad > {city_name}
+&gt; {category_name}</div>
+</div>
+<div style="clear: both; padding-top: 10px;"><img
+	src="{site_url}/images/captchas/{uid}.gif" /></div>
+<div style="clear: both; padding-top: 10px;">Can't see the
+5character string above?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+	href="{site_url}/listings/activate/{uid}" class="btn_link">refresh</a></div>
+<form action="{site_url}/listings/pay/{uid}" method="post">
+<div style="clear: both;"><strong>
+<p>Please insert the code</p>
+<input type="text" name="code" id="code" style="width: 200px;" /> </strong></div>
+<div style="padding-top: 10px;"><input name="submit" type="submit"
+	value="  Finish  " class="green_button" /></div>
+</form>
+</div>

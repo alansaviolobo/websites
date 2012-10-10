@@ -1,0 +1,31 @@
+<form action="{site_url}/admin/cities/save/" method="post"
+	style="padding: 20px;">
+<p class="title2">Edit City</p>
+<table width="90%" border="0" align="center" cellpadding="10"
+	cellspacing="0">
+	<tr>
+		<td width="22%" valign="top"><strong>Name</strong></td>
+		<td width="78%" valign="top"><input name="name" type="text"
+			id="name" style="width: 300px;"></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>State</strong></td>
+		<td valign="top"><select name="state" id="state"
+			style="width: 300px;">
+			{states}
+			<option value="{state_id}"{selected}>{state_name}</option>
+			{/states}
+		</select></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>Is the city big?</strong></td>
+		<td valign="top"><input name="big" type="checkbox" id="big"
+			value="1" /></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><input type="submit" name="button" id="button"
+			value="  Change  "></td>
+	</tr>
+</table>
+</form>

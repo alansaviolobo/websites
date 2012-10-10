@@ -1,0 +1,9 @@
+RewriteEngine on 
+RewriteBase /
+
+ RewriteRule ^project_(.*).html$ project.php?id=$1
+ RewriteRule ^job_(.*).html$ job.php?id=$1
+ RewriteRule ^projects/([0-9]*)/(.*)/$ project.php?id=$1
+ RewriteRule ^jobs/([0-9]*)/(.*)/$ job.php?id=$1
+ RewriteRule ^providers/([0-9]*)/(.*)/$ profile.php?type=provider&id=$1
+ RewriteRule ^buyers/([0-9]*)/(.*)/$ profile.php?type=buyer&id=$1

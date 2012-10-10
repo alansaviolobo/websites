@@ -1,0 +1,20 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top"><br>
+      <form name="form1" method="post" action="">
+        <span class="header1">Withdraw Money</span><br>
+        <br>
+MoneyBookers Address:
+<input name="address" type="text" id="address" size="40">
+<br>
+<input type="hidden" name="payment_id" id="payment_id" value="{PAYMENT_ID}">
+<input type="hidden" name="amount" id="amount" value="{AMOUNT}">
+
+<br>
+<br>
+<input name="Submit" type="submit" id="Submit" value="Withdraw">
+            </form>
+      <br>    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

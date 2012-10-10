@@ -1,0 +1,28 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0" class="normal">
+  <tr>
+    <td valign="top"><br>
+      <span class="header1"><strong>{LANG_FEEDBACKFOR} {LANG_BUYERU} "{USERNAME}"</strong></span><br>
+      <br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="3">
+        <tr bgcolor="#EFEFEF">
+          <td>{LANG_PROVIDERU}</td>
+          <td>{LANG_PROJNAME}</td>
+          <td>{LANG_PROJDATE}</td>
+          <td width="100">{LANG_RATING}</td>
+        </tr>
+  {LOOP: REVIEWS}
+  <tr>
+    <td> <a href="profile.php?id={REVIEWS.user_id}&type=provider">{REVIEWS.username}</a></td>
+    <td> <a href="{REVIEWS.link}">{REVIEWS.project_title}</a></td>
+    <td> {REVIEWS.date} {LANG_AT} {REVIEWS.time} {REVIEWS.timezone} </td>
+    <td> <img border="0" src="templates/{TPL_NAME}/images/rating_{REVIEWS.rating}.gif"></td>
+  </tr>
+  <tr>
+    <td colspan="4"> <strong>{LANG_COMMENTS}: </strong> {REVIEWS.comment}</td>
+  </tr>
+  {/LOOP: REVIEWS}
+      </table>
+      <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

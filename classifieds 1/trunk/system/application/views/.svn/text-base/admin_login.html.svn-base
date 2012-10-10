@@ -1,0 +1,33 @@
+<div>
+<form action="{site_url}/admin/login/" method="post"
+	style="padding: 20px;">
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td><strong>Username:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="username" type="text" id="username"
+			style="width: 420px;" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>Password:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="password" type="password" id="password"
+			style="width: 420px;" /></td>
+	</tr>
+	<tr>
+		<td style="color: #FF0000; font-weight: bold;">{error}Login
+		error, please try again{/error}</td>
+	</tr>
+	<tr>
+		<td><input name="submit" type="submit" value="  Login  "
+			class="green_button" /></td>
+	</tr>
+</table>
+</div>
+
+
+
+</form>

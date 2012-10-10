@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/includes/classes
+END
+class.template_engine.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/includes/classes/class.template_engine.php
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/includes/classes/class.phpmailer.php
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/includes/classes/class.smtp.php
+END

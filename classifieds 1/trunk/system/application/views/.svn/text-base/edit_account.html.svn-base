@@ -1,0 +1,36 @@
+
+<form action="{site_url}/account/edit_save/" method="post">
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td><strong>Email:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="email" type="text" id="email_signup"
+			style="width: 380px;" value="{email}" class="required_input" /></td>
+	</tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+
+	<tr class="listing_body">
+		<td width="100%"><strong>Password</strong></td>
+	</tr>
+	<tr>
+		<td><input name="pass" type="password" id="pass"
+			style="width: 380px;" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>Password again</strong></td>
+	</tr>
+	<tr>
+		<td><input name="pass2" type="password" id="pass2"
+			style="width: 400px;" /></td>
+	</tr>
+
+	<tr></tr>
+</table>
+</div>
+<input name="submit" type="submit" value="  Continue  "
+	class="green_button" /></form>

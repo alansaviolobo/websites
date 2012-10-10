@@ -1,0 +1,115 @@
+<div class="title"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">Post an Ad > {city_name}
+&gt; {category_name}</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div>
+<form action="{site_url}/listings/save/" method="post">
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td><strong>Posting Title:</strong></td>
+		<td><strong>Specific Location:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="title" type="text" id="title"
+			style="width: 220px;" value="{title}" class="required_input" /></td>
+		<td><input name="location" type="text" id="location"
+			style="width: 120px;" value="{location}" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td colspan="2"><strong>Posting Description:</strong><br />
+		Only one job description per posting please. Please see our FAQ for
+		job posters</td>
+	</tr>
+	<tr>
+		<td colspan="2"><textarea name="body" id="body" cols="45"
+			rows="15" style="width: 380px;" class="required_input">{body}</textarea></td>
+	</tr>
+
+	<tr class="listing_body">
+		<td width="400%" colspan="2"><strong>Compensation:</strong>
+		[please be as detailed as possible]</td>
+	</tr>
+	<tr>
+		<td colspan="2"><input name="compensation" type="text"
+			id="compensation" style="width: 380px;" class="required_input"
+			value="{compensation}" /></td>
+	</tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td width="100%"><strong> Reply-to Email address for
+		applicants: </strong></td>
+	</tr>
+	<tr>
+		<td><input name="email" type="text" id="post_email"
+			style="width: 380px;" value="{email}" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>Type email address again:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="email2" type="text" id="post_email2"
+			style="width: 380px;" value="{email}" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><label> <input name="email_show"
+			{email_show1} value="1" id="P" tabindex="1" type="radio" /> use this
+		email address as my reply-to</label> <br />
+		<label> <input name="email_show" {email_show2} value="2"
+			tabindex="1" type="radio" /> hide my email address</label> <br />
+		<label> <input name="email_show" value="3"
+			{email_show3} id="A" tabindex="1" type="radio" /> do not show any
+		email address</label> (<strong>be sure to put other contact info in
+		your posting!</strong>)</td>
+	</tr>
+	<tr></tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td width="100%"><strong>Other stuff:</strong></td>
+	</tr>
+	<tr>
+		<td class="listing_body"><label> <input name="commuting"
+			type="checkbox" id="tc" tabindex="1" value="1" {commuting} />
+		telecommuting ok</label> &nbsp;&nbsp; <label> <input name="parttime"
+			type="checkbox" id="pt" tabindex="1" value="1" {parttime} />
+		part-time</label> &nbsp;&nbsp; <label> <input name="contract"
+			type="checkbox" id="ct" tabindex="1" value="1" {contract} />
+		contract</label> &nbsp;&nbsp; <label> <br />
+		<input name="nonprofit" type="checkbox" id="np" tabindex="1" value="1" {nonprofit} />
+		non-profit organization</label> &nbsp;&nbsp; <label> <input
+			name="internship" type="checkbox" id="in" tabindex="1" value="1" {internship} />
+		internship</label></td>
+	</tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td width="100%"><strong>Permissions:</strong></td>
+	</tr>
+	<tr>
+		<td class="listing_body"><label> <input name="recruitors"
+			type="checkbox" id="ro" tabindex="1" value="1" {recruitors} />
+		direct contact by recruiters is ok</label> <label> <br />
+		<input name="calls" type="checkbox" id="pc" tabindex="1" value="1" {calls} />
+		phone calls to you about this job are ok</label> <br />
+		<label> <input name="other_int" type="checkbox" id="oc"
+			tabindex="1" value="1" {other_int} /> ok for others to contact you
+		about other services, products or commercial interests</label> <br />
+		<label></label></td>
+	</tr>
+</table>
+</div>
+<input name="city" type="hidden" value="{city}" /> <input
+	name="category" type="hidden" value="{category}" /> <input name="uid"
+	type="hidden" value="{uid}" /> <input name="submit" type="submit"
+	value="  Continue  " class="green_button" /></form>
+</div>

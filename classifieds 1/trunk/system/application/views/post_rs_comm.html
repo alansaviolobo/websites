@@ -1,0 +1,154 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">Post an Ad > {city_name}
+&gt; {category_name}</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div>
+<form action="{site_url}/listings/save/" method="post"
+	enctype="multipart/form-data">
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td width="34%"><strong>Posting Title:</strong></td>
+		<td width="66%"><strong>Specific Location:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="title" type="text" id="title"
+			style="width: 220px;" value="{title}" class="required_input" /></td>
+		<td><input name="location" type="text" id="location"
+			style="width: 120px;" value="{location}" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td colspan="2"><strong>Posting Description:</strong></td>
+	</tr>
+	<tr>
+		<td colspan="2"><textarea name="body" id="body" cols="45"
+			rows="15" style="width: 380px;" class="required_input">{body}</textarea></td>
+	</tr>
+	<tr class="listing_body">
+		<td colspan="2"><strong>Rent:</strong></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input name="rent" type="text" id="rent"
+			style="width: 380px;" value="{rent}" class="required_input" /></td>
+	</tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td width="100%"><strong> Reply-to Email address for
+		applicants: </strong></td>
+	</tr>
+	<tr>
+		<td><input name="email" type="text" id="post_email"
+			style="width: 380px;" value="{email}" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>Type email address again:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="email2" type="text" id="post_email2"
+			style="width: 380px;" value="{email}" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><label> <input name="email_show"
+			{email_show1} value="1" id="P" tabindex="1" type="radio" /> use this
+		email address as my reply-to</label> <br />
+		<label> <input name="email_show" {email_show2} value="2"
+			tabindex="1" type="radio" /> hide my email address</label> <br />
+		<label> <input name="email_show" value="3"
+			{email_show3} id="A" tabindex="1" type="radio" /> do not show any
+		email address</label> (<strong>be sure to put other contact info in
+		your posting!</strong>)</td>
+	</tr>
+	<tr></tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+
+	<tr class="listing_body">
+		<td width="100%"><strong>Address Info</strong></td>
+	</tr>
+	<tr>
+		<td>
+		<table width="95%" border="0" cellspacing="0" cellpadding="4">
+			<tr>
+				<td>Strret</td>
+				<td>Nearest Cross Street:</td>
+				<td>City</td>
+				<td>State</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><input name="add_street" type="text" id="add_street"
+					style="width: 100px;" value="{add_street}" /></td>
+				<td><input name="add_cross_street" type="text"
+					id="add_cross_street" style="width: 100px;"
+					value="{add_cross_street}" /></td>
+				<td><input name="add_city" type="text" id="add_city"
+					style="width: 100px;" value="{add_city}" /></td>
+				<td><input name="add_state" type="text" id="add_state"
+					style="width: 60px;" value="{add_state}" /></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td width="100%"><strong>Images</strong></td>
+	</tr>
+	<tr>
+		<td>
+		<div class="green" style="padding-top: 7px; padding-bottom: 7px;"
+			id="file_button"><strong>add images</strong></div>
+		<div id="file_form" style="display: none;">
+		<table width="95%" border="0" cellspacing="0" cellpadding="6">
+			{images}
+			<tr>
+				<td><a href="{site_url}/listing_images/{id}_{img_file}"
+					style="float: left;" class="nyroModal"><img
+					src="{site_url}/listing_images/{id}_{img_file}" height="50"
+					border="0" /></a>
+				<div style="float: left; margin-left: 10px; padding-top: 16px;">{img_file}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+					href="{site_url}/listings/delete_img/{img_id}">[delete]</a></div>
+				</td>
+			</tr>
+			{/images} {uploads}
+			<tr>
+				<td><input name="image{iid}" type="file" id="image{iid}"
+					size="30" /></td>
+			</tr>
+			{/uploads}
+		</table>
+		</div>
+		</td>
+	</tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td width="100%"><strong>Permissions:</strong></td>
+	</tr>
+	<tr>
+		<td class="listing_body"><input name="other_int" type="checkbox"
+			id="oc" tabindex="1" value="1" {other_int}/> ok for others to
+		contact you about other services, products or commercial interests <br />
+		<label></label></td>
+	</tr>
+</table>
+</div>
+<input name="city" type="hidden" value="{city}" /> <input
+	name="category" type="hidden" value="{category}" /> <input name="uid"
+	type="hidden" value="{uid}" /> <input name="submit" type="submit"
+	value="  Continue  " class="green_button" /></form>
+</div>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment
+END
+uc_payment.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment.js
+END
+uc_payment.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment.admin.inc
+END
+uc_payment_checkout_pane.inc
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment_checkout_pane.inc
+END
+uc_payment.module
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment.module
+END
+uc_payment.install
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment.install
+END
+uc_payment_order_pane.inc
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment_order_pane.inc
+END
+uc_payment.ca.inc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment.ca.inc
+END
+uc_payment.info
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_payment/uc_payment.info
+END

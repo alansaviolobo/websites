@@ -1,0 +1,103 @@
+<?php
+//Moneybookers.install www.3formed.co.uk Aug 09
+
+function uc_moneybookers_schema() 
+{
+	$schema = array();
+	$schema['uc_payment_moneybookers_ipn'] = array(
+	'description' => t('Logs moneybookers IPN Messages'),
+	'fields' => array(
+		'merchant_id' => array(
+			'description' => t('the moneybookers merchant id'),
+			'type' => 'int',
+			'unsigned' => true,
+			'not null' => true,
+			'default' => 0,
+		),
+		'customer_id' => array(
+			'description' => t('the customer id'),
+			'type' => 'int',
+			'unsigned' => true,
+			'not null' => true,
+			'default' => 0,
+		),
+      		'txn_id' => array(
+        		'description' => t('The transaction ID from moneybookers.'),
+        		'type' => 'varchar',
+        		'length' => 255,
+        		'not null' => TRUE,
+        		'default' => '0',
+      		),
+      		'mb_txn_id' => array(
+        		'description' => t('The transaction ID from moneybookers.'),
+        		'type' => 'varchar',
+        		'length' => 255,
+        		'not null' => TRUE,
+        		'default' => '0',
+      		),
+      		'mb_amount' => array(
+        		'description' => t('The transaction value.'),
+        		'type' => 'float',
+        		'not null' => TRUE,
+        		'default' => '0.00',
+      		),
+      		'mb_currency' => array(
+        		'description' => t('The currency of the mb_amount.'),
+        		'type' => 'varchar',
+        		'length' => 10,
+        		'not null' => TRUE,
+        		'default' => '0',
+      		),
+      		'status' => array(
+        		'description' => t('The status returned.'),
+        		'type' => 'int',
+        		'not null' => TRUE,
+        		'default' => '0',
+      		),
+      		'md5sig' => array(
+        		'description' => t('The supplied md5sig for validation.'),
+        		'type' => 'varchar',
+        		'length' => 255,
+        		'not null' => TRUE,
+        		'default' => '0',
+      		),
+      		'pay_to_email' => array(
+        		'description' => t('pay_to_email.'),
+        		'type' => 'varchar',
+        		'length' => 255,
+        		'not null' => TRUE,
+        		'default' => '0',
+      		),
+      		'pay_from_email' => array(
+        		'description' => t('pay_from_email.'),
+        		'type' => 'varchar',
+        		'length' => 255,
+        		'not null' => TRUE,
+        		'default' => '0',
+      		),
+	)
+);
+
+return $schema;
+}
+
+
+		
+
+/**
+ * Implementation of hook_install().
+ */
+function uc_moneybookers_install() {
+  drupal_install_schema('uc_moneybookers');
+  $t = get_t();
+  db_query("INSERT INTO {uc_order_statuses} (order_status_id, title, state, weight, locked) VALUES ('moneybookers_pending', '". $t('Moneybookers pending') ."', 'payment_received', 7, 1);");
+ }
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function uc_moneybookers_uninstall() {
+  db_query("DROP TABLE {uc_payment_moneybookers_ipn}");
+  db_query("DELETE FROM {variable} WHERE name LIKE 'uc_moneybookers_%%'");
+}
+?>

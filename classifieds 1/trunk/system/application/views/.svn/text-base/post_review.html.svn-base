@@ -1,0 +1,30 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">Post an Ad > {city_name}
+&gt; {category_name}</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div class="date_title">{listing_title}</div>
+<div class="listing_body">{listing_body}
+<div style="clear: both; padding-top: 10px; padding-bottom: 10px;">
+{images} <a href="{site_url}/listing_images/{id}_{img_file}"
+	style="margin-right: 10px;" class="nyroModal"><img
+	src="{site_url}/listing_images/{id}_{img_file}" height="150" border="0" /></a>
+{/images}</div>
+</div>
+<div class="listing_details">
+<ul>
+	{listing_info}
+	<li>{info_body}</li>
+	{/listing_info}
+</ul>
+</div>
+<div style="padding-top: 10px;">
+<form action="{site_url}/listings/activate/{uid}" method="post"
+	style="padding: 0px; margin: 0px; float: left; width: 100px;"><input
+	name="submit" type="submit" value="  Continue  " class="green_button" />
+</form>
+<form action="{site_url}/listings/edit/{uid}" method="post"
+	style="padding: 0px; margin: 0px; float: left; width: 100px;"><input
+	name="submit" type="submit" value="  Edit  " class="green_button" /></form>
+</div>

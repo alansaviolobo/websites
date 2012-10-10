@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views
+END
+post_job.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_job.html
+END
+post_rs_rent.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_rs_rent.html
+END
+forgot_password.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/forgot_password.html
+END
+edit_user.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/edit_user.html
+END
+contact_sent.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/contact_sent.html
+END
+categories.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/categories.html
+END
+finish_CANCEL.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/finish_CANCEL.html
+END
+prices.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/prices.html
+END
+post_cities.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_cities.html
+END
+post_mult_cities.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_mult_cities.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/header.html
+END
+manage_cities.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/manage_cities.html
+END
+terms.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/terms.html
+END
+resend_activation.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/resend_activation.html
+END
+users.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/users.html
+END
+edit_account.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/edit_account.html
+END
+post_rs_comm.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_rs_comm.html
+END
+post_review.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_review.html
+END
+post_regular.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_regular.html
+END
+post_states.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_states.html
+END
+finish_OK.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/finish_OK.html
+END
+add_review.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/add_review.html
+END
+header_popup.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/header_popup.html
+END
+contact_me.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/contact_me.html
+END
+edit_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/edit_city.html
+END
+view_reviews.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/view_reviews.html
+END
+admin_pass.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/admin_pass.html
+END
+post_pers.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_pers.html
+END
+cities.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/cities.html
+END
+add_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/add_city.html
+END
+admin_login.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/admin_login.html
+END
+classes_events.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/classes_events.html
+END
+finish_FAILED.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/finish_FAILED.html
+END
+details.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/details.html
+END
+post_event.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_event.html
+END
+pay.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/pay.html
+END
+post_categories.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_categories.html
+END
+post_mult_categories.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_mult_categories.html
+END
+listings.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/listings.html
+END
+newsletter.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/newsletter.html
+END
+activated_OK.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/activated_OK.html
+END
+signup_OK.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/signup_OK.html
+END
+post_forsale.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_forsale.html
+END
+post_pers2.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_pers2.html
+END
+header_admin.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/header_admin.html
+END
+my_account.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/my_account.html
+END
+post_activate.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/post_activate.html
+END
+signup.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/signup.html
+END
+activated_FAILED.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/activated_FAILED.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/login.html
+END
+upload_video.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/classifieds%201/trunk/system/application/views/upload_video.html
+END

@@ -1,0 +1,118 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br><form name="form1" method="post" action="signup.php">
+        <table width="500" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top" style="padding-top:5px;"><strong>{LANG_USERNAME}</strong></td>
+          </tr>
+          <tr>
+            <td><input name="username" type="text" id="username" style="width:200px;" onchange="changeuser(this,'avail');" onkeypress="changeuser(this,'avail');" onkeyUp="changeuser(this,'avail');" value="{USERNAME_FIELD}" maxlength="16">
+                <br>
+                <input type="button" name="avail" id="avail" value="{LANG_CHECKAVAIL}" onclick="checkavail('username','buyer');" style="width:200px;" disabled>
+                <br>
+                <span id="availres"></span> <br>
+                <span class="error">{USERNAME_ERROR}</span></td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-top:5px;"><strong>{LANG_PASSWORD}</strong></td>
+          </tr>
+          <tr>
+            <td><input name="password" type="password" id="password" style="width:200px;" maxlength="16"></td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-top:5px;"><strong>{LANG_CONPASS}</strong></td>
+          </tr>
+          <tr>
+            <td><input name="password2" type="password" id="password2" style="width:200px;" maxlength="16">
+                <br>
+                <span class="error">{PASSWORD_ERROR}</span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-top:5px;"><strong>{LANG_EMAILAD}</strong></td>
+          </tr>
+          <tr>
+            <td><input name="email" type="text" id="email" style="width:200px;" value="{EMAIL_FIELD}" maxlength="255">
+                <br>
+                <span class="error">{EMAIL_ERROR}</span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-top:5px;"><strong>{LANG_NAMECOM}</strong></td>
+          </tr>
+          <tr>
+            <td><input name="name" type="text" id="name" style="width:200px;" value="{NAME_FIELD}" maxlength="255">
+                <br>
+                <span class="error">{NAME_ERROR}</span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        {LOOP: CUSTOMFIELDS}
+        <tr>
+          <td valign="top" style="padding-top:5px;"><strong>{CUSTOMFIELDS.title}</strong></td>
+        </tr>
+        <tr>
+          <td>
+          IF("{CUSTOMFIELDS.type}"=="text"){<input name="custom[{CUSTOMFIELDS.id}]" type="text" id="custom[{CUSTOMFIELDS.id}]" size="30" maxlength="{CUSTOMFIELDS.maxlength}" value="{CUSTOMFIELDS.default}">{:IF}
+          IF("{CUSTOMFIELDS.type}"=="select"){{CUSTOMFIELDS.selectbox}{:IF}
+          </td>
+        </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        {/LOOP: CUSTOMFIELDS}
+          <tr>
+            <td valign="top"><strong>{LANG_SECURITY}</strong></td>
+          </tr>
+          <tr>
+            <td><table border="0" cellpadding="0" cellspacing="0">
+  IF("{SECURITY_CODE}"=="1"){
+  <tr>
+    <td height="55" valign="top"><img src="seccode.php"></td>
+  </tr>
+  <tr>
+    <td><input name="security_code" type="text" id="security_code"></td>
+  </tr>
+  <tr>
+    <td>{LANG_TYPESEC}<br>
+        <span class="error">{SECURITY_ERROR}</span></td>
+  </tr>
+  {:IF}
+            </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><table  border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><input name="agree" type="checkbox" value="1"></td>
+                <td>{LANG_IAGREE} <a href="#" onClick="window.open('{SITE_URL}html.php?id=terms&basic=1','terms','width=300,height=500,scrollbars=yes')">{LANG_TANDC}</a> {LANG_FORUSING} {SITE_TITLE}<br>
+                    <span class="error">{AGREE_ERROR}</span></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><span class="normal">
+              <input name="type" type="hidden" id="type" value="buyer">
+            </span>
+              <input type="submit" name="Submit" value="{LANG_SIGNUP}"></td>
+          </tr>
+        </table>
+        <br>
+        </form>
+    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

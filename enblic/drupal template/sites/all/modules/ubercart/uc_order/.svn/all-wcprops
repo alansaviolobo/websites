@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order
+END
+uc_order.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.admin.inc
+END
+uc_order.module
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.module
+END
+uc_order.install
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.install
+END
+uc_order.order_pane.inc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.order_pane.inc
+END
+uc_order.css
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.css
+END
+uc_order.ca.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.ca.inc
+END
+uc_order.info
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.info
+END
+uc_order.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.js
+END
+uc_order.line_item.inc
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_order/uc_order.line_item.inc
+END

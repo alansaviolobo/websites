@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Sterling Residency Developers: Goa</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <script language="JavaScript">
+            <!--
+            function MM_swapImgRestore(){ //v3.0
+                var i, x, a = document.MM_sr;
+                for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) 
+                    x.src = x.oSrc;
+            }
+            
+            function MM_preloadImages(){ //v3.0
+                var d = document;
+                if (d.images) {
+                    if (!d.MM_p) 
+                        d.MM_p = new Array();
+                    var i, j = d.MM_p.length, a = MM_preloadImages.arguments;
+                    for (i = 0; i < a.length; i++) 
+                        if (a[i].indexOf("#") != 0) {
+                            d.MM_p[j] = new Image;
+                            d.MM_p[j++].src = a[i];
+                        }
+                }
+            }
+            
+            function MM_findObj(n, d){ //v4.0
+                var p, i, x;
+                if (!d) 
+                    d = document;
+                if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                    d = parent.frames[n.substring(p + 1)].document;
+                    n = n.substring(0, p);
+                }
+                if (!(x = d[n]) && d.all) 
+                    x = d.all[n];
+                for (i = 0; !x && i < d.forms.length; i++) 
+                    x = d.forms[i][n];
+                for (i = 0; !x && d.layers && i < d.layers.length; i++) 
+                    x = MM_findObj(n, d.layers[i].document);
+                if (!x && document.getElementById) 
+                    x = document.getElementById(n);
+                return x;
+            }
+            
+            function MM_swapImage(){ //v3.0
+                var i, j = 0, x, a = MM_swapImage.arguments;
+                document.MM_sr = new Array;
+                for (i = 0; i < (a.length - 2); i += 3) 
+                    if ((x = MM_findObj(a[i])) != null) {
+                        document.MM_sr[j++] = x;
+                        if (!x.oSrc) 
+                            x.oSrc = x.src;
+                        x.src = a[i + 2];
+                    }
+            }
+            
+            //-->
+        </script>
+        <script LANGUAGE="JavaScript">
+            <!--
+            function pop(){
+                window.open("pop_location.htm", "pop1", "height=500,width=700,left=50,top=50,scrollbars=yes,resizable=yes")
+                
+            }
+            
+            function pop1(){
+                window.open("pop_scheme_plan.htm", "pop2", "height=500,width=700,left=50,top=50,scrollbars=yes,resizable=yes")
+                
+            }
+            
+            //-->
+        </script>
+        <link rel="stylesheet" href="sr.css" type="text/css">
+    </head>
+    <body bgcolor="#FFFFFF" text="#000000" background="images/bg.gif" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/butt_01_o.gif','images/butt_02_o.gif','images/butt_03_o.gif','images/butt_04_o.gif','images/butt_05_o.gif','images/layout_o.gif','images/3d_o.gif','images/enquiry_o.gif')">
+        <table width="780" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td valign="top">
+                            </td>
+                            <td>
+                                <div align="right" style="padding-right:30px;padding-top:5px;padding-bottom:5px;">
+                                    <img src="images/logo.png" width="55" height="50">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="780" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <tr>
+                                <td width="262">
+                                </td>
+                                <td>
+                                    <a href="about.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/butt_01_o.gif',1)"><img name="Image3" border="0" src="images/butt_01.gif" width="98" height="58"></a><a href="projects.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/butt_02_o.gif',1)"><img name="Image4" border="0" src="images/butt_02.gif" width="98" height="58"></a><a href="proj_gallery.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/butt_03_o.gif',1)"><img name="Image5" border="0" src="images/butt_03.gif" width="99" height="58"></a><a href="contactus.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/butt_04_o.gif',1)"><img name="Image6" border="0" src="images/butt_04.gif" width="98" height="58"></a><a href="sitemap.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/butt_05_o.gif',1)"><img name="Image7" border="0" src="images/butt_05.gif" width="106" height="58"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="262" align="bottom" height="363">
+                                    <div style="width:262; height:363;">
+                                        <img src="images/pool_main_1.png" style="margin-top:50px;">
+                                    </div>
+                                </td>
+                                <td background="images//main_bg.png" valign="top">
+                                    <table width="490" border="0" cellspacing="5" cellpadding="5">
+                                        <tr>
+                                            <td>
+                                                <img src="images/sterling_res.gif" width="146" height="27">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table width="490" border="0" cellspacing="5" cellpadding="5">
+                                        <tr>
+                                            <td height="100" width="115">
+                                                &nbsp;
+                                            </td>
+                                            <td height="100" width="270" valign="top" class="content">
+                                                <p>
+                                                    Sterling developers, dedicated to quality and customer satisfaction, 
+                                                    brings you STERLING RESORTS, set amidst swaying palms and blue waters of Calangute.
+                                                </p>
+                                                <p>
+                                                    Ideally located, the scheme is alongside the famous Calangute beach, 
+                                                    the tourist hub of Goa, giving you access to adventurous activities on the beach, 
+                                                    local markets and fairs as well as serene walks and beautiful sunsets.
+                                                </p>
+                                                <br/>
+                                                <p align="right">
+                                                    <a href="projects.htm"><img src="images/readmore.gif" width="71" height="9" border="0"></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <br/>
+                                                <p class="content">
+                                                    <a class="press" href=Javascript:pop()><img src="images/location.gif" width="178" height="73" align="right" border="0"></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td height="158">
+                                <table width="754" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td background="images/bottom_bg.gif" width="268">
+                                            <a href="layout.htm"><img name="Image8" border="0" src="images/layout.gif" width="86" height="158"></a><a href="3d_view.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','images/3d_o.gif',1)"><img name="Image9" border="0" src="images/3d.gif" width="88" height="158"></a><a href="enquiry.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','images/enquiry_o.gif',1)"><img name="Image10" border="0" src="images/enquiry.gif" width="94" height="158"></a>
+                                        </td>
+                                        <td background="images/bottom_bg.gif" valign="top">
+                                            <div align="center">
+                                                <a href="projects.htm"><img src="images/build01.jpg" width="204" height="136" hspace="10" border="0"></a><img src="images/seperator.gif" width="1" height="135" hspace="10"><a href="projects.htm"><img src="images/build02.jpg" width="204" height="135" hspace="10" border="0"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tr>
+                                        <td bgcolor="#C4CAE3" height="1">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25">
+                                            <div align="center" class="copyright">
+                                                Copyright&copy; 2007/08 Sterlingdevelopersgoa.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site&nbsp;Powered By <a href="http://www.technotrix.co.in" class="copyright"><strong>Technotrix</strong></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6083919-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+                    </body>
+                </html>

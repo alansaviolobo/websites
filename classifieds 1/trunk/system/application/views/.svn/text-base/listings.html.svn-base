@@ -1,0 +1,21 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">{location} &gt; Listings</div>
+<div class="post_div"><a
+	href="{site_url}/listings/add/{city_id}/{cat_id}">[post]</a></div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+{listings}
+<div class="date_title">{list_day}</div>
+{day_list}
+<div class="listing_link"><a
+	href="{site_url}/listings/details/{list_id}">{list_name}</a>{list_imgs}<img
+	src="http://albuquerque.backpage.com/images/camera.gif" alt="Picture"
+	title="Picture" width="14" height="11"
+	style="margin-left: 6px; margin-right: 6px;" />{/list_imgs}
+({list_location} - {list_cat})</div>
+{/day_list} {/listings} {no_results}
+<div
+	style="font-size: 13px; padding: 10px; padding-left: 6px; padding-right: 6px;"><strong>No
+results.</strong></div>
+{/no_results}

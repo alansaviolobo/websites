@@ -1,0 +1,52 @@
+{OVERALL_HEADER}
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><br>        
+      <table width="100" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><form name="form1" method="post" action="">
+            <table width="300" border="0" cellpadding="4" cellspacing="0">
+              <tr>
+                <td class="normal"><strong>{LANG_KEYWORDS}:</strong></td>
+              </tr>
+              <tr>
+                <td class="normal"><input type="text" name="keywords" style="width:200px"></td>
+              </tr>
+              <tr>
+                <td class="normal"><strong>{LANG_STATUS}:</strong></td>
+              </tr>
+              <tr>
+                <td class="normal"><select name="status" style="width:206px">
+                    <option value="3">Any</option>
+                    <option value="0" selected>Open</option>
+                    <option value="1">Frozen</option>
+                    <option value="2">Closed</option>
+                </select></td>
+              </tr>
+            </table>
+            <br>
+            <table width="300" border="0" cellspacing="0" cellpadding="2">
+              <tr>
+                <td class="normal"><strong>{LANG_JOBTYPE}: </strong></td>
+              </tr>
+              <tr>
+                <td class="normal"><table border="0" cellspacing="0" cellpadding="0">
+                    {LOOP: JOBTYPE}<tr>
+		  IF("{JOBTYPE.ctype}"=="0"){<tr><td align="left"><input name="jobtype[{JOBTYPE.id}]" type="checkbox" value="{JOBTYPE.id}"></td><td align="left"> {JOBTYPE.title}</td></tr>{:IF}
+          IF("{JOBTYPE.ctype}"=="2"){<tr><td align="left"></td><td align="left"><table border="0" cellspacing="0" cellpadding="0"><tr><td><input name="jobtype[{JOBTYPE.id}]" type="checkbox" value="{JOBTYPE.id}"></td><td> {JOBTYPE.title}</td></tr></table></td></tr>{:IF}
+          IF("{JOBTYPE.ctype}"=="1"){<tr><td align="left"><input name="jobtype[{JOBTYPE.id}]" type="checkbox" value="{JOBTYPE.id}"></td><td align="left"> {JOBTYPE.title}</td></tr>{:IF}
+                      
+                    </tr>{/LOOP: JOBTYPE}
+                </table></td>
+              </tr>
+            </table>
+            <br>
+            <input type="submit" name="Submit" value="{LANG_SEARCH}">
+                    </form></td>
+        </tr>
+      </table>
+      <br>
+    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

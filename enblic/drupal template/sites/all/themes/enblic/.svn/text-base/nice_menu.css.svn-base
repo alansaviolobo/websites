@@ -1,0 +1,55 @@
+ul.nice-menu,
+ul.nice-menu ul {
+	right:0px;
+  list-style: none;
+  padding-right: 10px;  
+  }
+
+ul.nice-menu a {
+  color:white;
+  text-decoration:none;
+  font-weight: bold;
+  padding-right:5px;
+}
+
+ul.nice-menu a:hover {
+color:aqua;
+}
+
+ul.nice-menu ul,
+ul.nice-menu ul li {
+  margin-left:0px;
+  padding-left:0px;
+  border:none;
+  width:10em;
+  background-color:black;
+}
+
+ul.nice-menu-down {
+  float: left;
+}
+
+ul.nice-menu-down ul {
+  left: 0;
+}
+
+ul.nice-menu-down ul li {
+  clear: both;
+  background-color:black;
+}
+
+ul.nice-menu-down li ul li ul,
+ul.nice-menu-down .menuparent a {
+  padding-right: 8px;
+  padding-left: 10px;  
+}
+
+.menu-content .content ul li ul 
+{
+margin-top:0;
+opacity:0.7;
+filter:alpha(opacity=70);
+-khtml-opacity: 0.7;      /* khtml, old safari */
+-moz-opacity: 0.7;  
+border:none;
+}

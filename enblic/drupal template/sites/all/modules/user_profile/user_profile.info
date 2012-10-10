@@ -1,0 +1,6 @@
+; $Id$
+name = User Profile
+description = Allows creation and display of enblic game profiles.
+core = 6.x
+package = Other
+version = "$Name$"

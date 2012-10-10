@@ -1,0 +1,50 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top">    <br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+             </tr>
+            <tr>
+              <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+            </tr>
+          </table></td>
+        <td valign="top">            <span class="title2">{LANG_INBOX}</span><br>
+          <br>
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" bgcolor="#C7C7C7" style="padding-left:5px;">{USERNAME}</td>
+              <td align="right" bgcolor="#C7C7C7" style="padding-right:5px;">{DATE}</td>
+              </tr>
+            </table>
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="padding:5px;"><strong>{SUBJECT}</strong></td>
+              </tr>
+              <tr>
+                <td style="padding:5px;">{BODY}</td>
+              </tr>
+			  <tr>
+			  	<td align="right" style="padding:5px;"><a href="private.php?cmd=delete&id={MESSAGE_ID}"><img src="templates/{TPL_NAME}/images/delete.gif" alt="Delete" width="76" height="16" hspace="5" border="0"></a><a href="private.php?cmd=send&mid={MESSAGE_ID}"><img src="templates/{TPL_NAME}/images/reply.gif" alt="Reply" width="76" height="16" hspace="5" border="0"></a></td></tr>
+            </table>
+            <br></td>
+      </tr>
+    </table>
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

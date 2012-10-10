@@ -1,0 +1,45 @@
+{OVERALL_HEADER}
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>
+        <span class="error">{FORGOT_ERROR}</span> <br>
+        <br>
+        <form name="form1" method="post" action="login.php" style="padding:0px;spacing:0px;">
+          <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><strong>Username</strong></td>
+            </tr>
+            <tr>
+              <td>{USERNAME}</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td><strong>{LANG_PASSWORD}</strong></td>
+            </tr>
+            <tr>
+              <td><input name="password" type="password" id="password" maxlength="40"></td>
+            </tr>
+            <tr>
+              <td><strong>{LANG_CONPASS}</strong></td>
+            </tr>
+            <tr>
+              <td><input name="password2" type="password" id="password2" maxlength="40"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td><input type="submit" name="Submit" value="{LANG_SUBMIT}"></td>
+            </tr>
+          </table>
+          <input type="hidden" name="forgot" id="forgot" value="{FIELD_FORGOT}">
+          <input type="hidden" name="r" id="r" value="{FIELD_R}">
+          <input type="hidden" name="e" id="e" value="{FIELD_E}">
+          <input type="hidden" name="t" id="t" value="{FIELD_T}">
+		  <input type="hidden" name="type" id="type" value="{FIELD_TYPE}">
+      </form></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

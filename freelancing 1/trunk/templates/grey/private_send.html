@@ -1,0 +1,62 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top">    <br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+             </tr>
+            <tr>
+              <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+            </tr>
+          </table></td>
+        <td valign="top">            <span class="title2">{LANG_INBOX}</span><br>
+          <br>
+            <form name="form1" method="post" action="private.php?cmd=send" style="padding:0px;margin:0px;">
+              <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="100" height="30">To</td>
+                  <td>{TO_USERNAME} ({TO_TYPE_DISP})<input name="toid" type="hidden" value="{TO_ID}"><input name="totype" type="hidden" value="{TO_TYPE}"></td>
+                </tr>
+                <tr>
+                  <td height="30">{LANG_SUBJECT}</td>
+                  <td><input name="subject" type="text" id="subject" value="{MESSAGE_SUBJECT}" style="width:400px;" maxlength="50"></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td valign="top">{LANG_MESSAGE}</td>
+                  <td><textarea name="body" cols="40" rows="10" style="width:400px;" id="body">{MESSAGE_BODY}</textarea></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>                  <input name="Submit" type="image" id="Submit" src="templates/{TPL_NAME}/images/sendmessage.gif" alt="{LANG_SENDMESS}" width="116" height="16" border="0"></td>
+                </tr>
+              </table>
+            </form>
+            <br></td>
+      </tr>
+    </table>
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

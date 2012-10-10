@@ -1,0 +1,384 @@
+img, div {	behavior: url(sites/all/themes/enblic/iepngfix.htc); }
+
+html, body{
+	padding:0px;
+	border:0px;
+	margin:0px;
+	text-align:center;
+}
+
+body{
+	background:#c4cfd4 url(images/background.jpg) no-repeat scroll center top;
+	font-family:"Arial";
+}
+
+p{
+	margin-top:0px;
+}
+
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-portion{
+	background-color:#111111;
+	height:30px;
+	width:100%;
+	position:relative;
+}
+
+.header-portion ul{
+	list-style:none;
+	display: inline;
+}
+
+.header-portion ul li{
+	float:left;
+	border-right: 1px solid #4F4F4F;
+	padding:0 10px;
+}
+
+.header-portion ul li #user-bar{
+	overflow: hidden;
+	margin-top: -3px;
+	line-height: 1.7em;
+}
+
+.header-portion ul li #user-bar #user-login-form {
+	float: left;
+	margin-right: 8px;
+}
+
+.header-portion ul li #user-bar #user-login-form .form-item {
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+.header-portion ul li #user-bar .item-list, .header-portion ul li #user-bar #user-login-form .form-item label {
+	float: left;
+}
+
+.header-portion ul li #user-bar #user-login-form .item-list {
+	display: none;
+}
+
+.login-button {
+	background-image: url(images/login_button_background.jpg);
+	width: 47px;
+	height: 17px;
+	font-size: 11px;
+	border-width:0px;
+	font-family: "Myriad Pro";
+	font-weight: bold;
+}
+
+.header-portion ul li.last{
+	border-right: none;
+}
+
+.align-vertical-center {
+	position:absolute;
+	top: 50%;
+	margin-top:-0.6em;
+}
+
+.content-part{
+	width:824px;
+	margin: 0 auto;
+	color:#ffffff;
+	height: 100%;
+	position:relative;
+}
+
+.absolute-right{
+	right:0px;
+}
+
+.absolute-left{
+	left:0px;
+}
+
+.body-portion{
+	width:100%;
+}
+.menu-portion{
+	background:transparent url(images/menubackground.png) no-repeat scroll bottom left;
+	height:116px;
+	position: relative;
+}
+
+.menu-portion ul li{
+	float:left;
+	padding:0 10px;
+}
+
+.menu-portion ul li.last{
+	background:none;
+}
+
+.menu-content{
+	height:48px;
+	width:100%;
+	bottom: 0px;
+	left:0px;
+	position: absolute;
+}
+
+.menu-content .content{
+	margin-top: 0px;
+	padding: 0px;
+	background:none;
+}
+
+.menu-content .content ul li ul{
+	margin-top: 0px;
+	text-align: left;
+}
+
+.menu-content ul{
+	float: right;
+	margin-top: 0px;
+	padding: 0px;
+}
+	
+.menu-content li{
+	background:transparent url(images/menuseparator.jpg) no-repeat scroll top right;
+	height:46px;
+	line-height:46px;
+}
+
+.sub-menu{
+	height:43px;
+	position:relative;
+}
+
+.sub-menu .selected a:link{
+	color: #09cffa;
+}
+
+.sub-menu ul{
+	margin-top: -0.7em;
+	width:100%;
+	padding-left:0px;
+}
+
+.sub-menu li{
+	border-left:1px solid #4f4f4f;
+}
+
+.sub-menu li.first{
+	border:none;
+	margin-left:20px;
+}
+
+.sub-menu li.last{
+	float:right;
+	margin-right:20px;
+}
+
+.content-logo{
+	background: transparent url(images/menu_end_bar.png) no-repeat scroll bottom left;
+	padding-bottom: 14px;
+	z-index:-1;
+}
+
+.content-logo img{
+	margin-bottom: 0px;
+}
+
+.bottom-menu{
+	background:transparent url(images/bottommenu.png) no-repeat scroll top left;
+	height:43px;
+	line-height:43px;
+	position:relative;
+}
+
+.bottom-menu .last{
+	right:0px;
+	position:absolute;
+	width:247px;
+	top:0px;
+}
+
+.bottom-menu .center{
+	position:relative;
+	margin:0 auto;
+	width:162px;
+}
+
+.content-portion{
+	background: transparent url(images/content_top_bar.png) no-repeat scroll top left;
+	width: 100%;
+	margin-top:38px;
+	text-align:left;
+	padding-top:14px;
+}
+.content-left,.content-right{
+	float:left;
+}
+.content-left{
+	width:555px;
+	border-left: medium solid #000000;
+	border-top: medium solid #000000;
+}
+
+.content-full-width {
+	width: 818px;
+}
+
+.content-right-border {
+	border-right: medium solid #000000;
+}
+
+.content-left h2, .content-left p{
+	margin: 0px;
+}
+
+.content-right{
+	width:266px;
+}
+
+.content-block .title{
+	background-color: #ffffff;
+	height:48px;
+	line-height:48px;
+}
+
+.content-block .title .text{
+	float:left;
+	margin-left: 5px;
+}
+
+.content-block .title .title-tabs{
+	float:right;
+	height: 48px;
+}
+
+.content-block .title .title-tabs ul{
+	margin: 0px;
+	border: none;
+}
+
+.content-block .title .title-tabs ul li {
+	line-height: 48px;
+}
+
+.content-block .title .title-tabs ul li a, .content-block .title .title-tabs ul li.active a{
+	border: 1px solid #BBBBBB;
+}
+
+.content-block .body{
+	background-color: #000000;
+	padding: 5px;
+}
+
+.content-block .body .content{
+	margin-top: 0px;
+}
+
+.content-block #forum table {
+	width: 100%;
+}
+
+.content-block #forum tr.even, .content-block #forum tr.odd {
+	background: none;
+}
+
+.banner{
+	border: medium solid #111111;
+	background:#ffffff;
+	height:600px;
+}
+
+.footer-block{
+	background-color: #000000;
+	margin: 20px 0px 0px;
+	width: 100%;
+	float: left;
+	clear:both;
+}
+
+.footer-block ul{
+	width: 790px;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.footer-block ul li{
+	float: left;
+	padding: 0 10px;
+}
+
+.footer-block ul li a:link{
+	text-decoration: underline;
+}
+
+.footer-message{
+	width: 777px;
+	margin: 55px auto;
+	padding: 0 0 10px;
+	color: #ffffff;
+}
+
+.footer-logo{
+	background:transparent url(images/footer-logo.png) no-repeat scroll top left;
+	height: 107px;
+}
+
+.header-size ul li {
+	font-size:13px;
+	height:20px;
+	font-weight: bold;
+}
+
+.header-size ul li a{
+	color:white;
+	text-decoration:none;
+	font-size: 13px;
+}
+
+
+.header-size ul li a:hover{
+color:aqua;
+}
+
+
+.input-size{
+font-size:10px;
+width: 100px;
+}
+
+.button-size{
+font-size:10px;
+height: 19px;
+background-color:gray;
+font-weight:bold;
+}
+
+.button{
+width:150px;
+height:75px;
+background: url(images/button.png) no-repeat left;	
+padding-right:20px;
+cursor: pointer;
+border:none;
+}
+
+.blue{
+background-color:blue;
+width:210;
+}
+
+.title{
+color:black;
+}
+
+ul.tabs{
+margin-top:21px;
+}
+
+#cart-form-products td.desc a,table tr td, table th{
+color:brown;
+text-decoration: none;
+}

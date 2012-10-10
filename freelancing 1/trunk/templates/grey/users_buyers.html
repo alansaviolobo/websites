@@ -1,0 +1,51 @@
+{OVERALL_HEADER}
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>      
+         <span class="title1">{USER_TYPE}s</span><br><br>
+         <table border="0" cellpadding="0" cellspacing="0" width="780">
+           <tr><td width="200" valign="top">
+           <form action="users.php" method="post" enctype="multipart/form-data" name="form1" id="form1" style="padding:0px;margin:0px;">
+           <table width="170" border="0" cellspacing="0" cellpadding="0">
+           	<tr>
+            <td height="30">
+            <strong>{LANG_UTYPE}</strong>            </td>
+           	</tr>
+            <tr><td height="30"><select name="type" id="type">
+               <option value="buyer" selected>{LANG_BUYERU}</option>
+               <option value="provider">{LANG_PROVIDERU}</option>
+               </select></td>
+            </tr>
+             <tr>
+               <td height="30"><input type="submit" name="button" id="button" value="{LANG_SEARCH}" /></td>
+             </tr>
+           </table>
+           </form>
+           </td>
+         <td valign="top">
+	  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+        <tr bgcolor="#E1E1E1" class="table_titles">
+          <td style="padding-left:5px;" width="200" height="30">{LANG_USERNAME}</td>
+          <td style="padding-left:5px;">{LANG_FEEDBACK}</td>
+        </tr>
+		{LOOP: USERS} <tr>
+		  <td colspan="2" height="5"><img src="{SITE_URL}templates/{TPL_NAME}/images/dot.gif" width="1" height="1" alt="" border="0"></td>
+	    </tr>        <tr>
+          <td style="padding-left:5px;" height="50" valign="top"><span class="normtext"><strong><a href="{SITE_URL}profile.php?id={USERS.id}&type={USERS.type}">{USERS.username}</a></strong><br />{USERS.name}</span></td>
+          <td style="padding-left:5px;" valign="top">
+          <table cellpadding="0" cellspacing="0" bordr="0"><tr><td width="60">
+          <span class="normtext">Reviews: </span></td><td><span class="normtext">{USERS.reviews}</span></td></tr><tr><td><span class="normtext">Rating: </span></td><td> <img border="0" src="{SITE_URL}templates/{TPL_NAME}/images/rating_{USERS.rating}.gif"></td></tr></table></td>
+        </tr>
+	    <tr>
+		  <td colspan="2" background="{SITE_URL}templates/{TPL_NAME}/images/hline_dot.gif"><img src="{SITE_URL}templates/{TPL_NAME}/images/dot.gif" width="1" height="1" alt="" border="0"></td>
+	    </tr>
+		{/LOOP: USERS}
+      </table>
+	  <br /><br />
+      <strong>{LANG_PAGES}:</strong> {LOOP: PAGES}<a href="{PAGES.link}">{PAGES.title}</a> {/LOOP: PAGES}
+      <br /><br />
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

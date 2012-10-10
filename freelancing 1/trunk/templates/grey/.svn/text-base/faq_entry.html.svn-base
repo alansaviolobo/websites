@@ -1,0 +1,9 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>
+      <span class="header1"><strong>{FAQ_TITLE}</strong></span><br>
+<span class="normal">{FAQ_CONTENT}</span><br>
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

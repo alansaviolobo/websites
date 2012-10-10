@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>{SITE_TITLE} - {PAGE_TITLE}</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Type" content="text/html; charset={LANG_CONTENTTYPE}">
+<link href="{SITE_URL}templates/{TPL_NAME}/images/style.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+var http = createRequestObject();
+
+function createRequestObject() 
+{
+	var ro;
+	var browser = navigator.appName;
+	if(browser == "Microsoft Internet Explorer")
+	{
+		ro = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	else
+	{
+		ro = new XMLHttpRequest();
+	}
+	return ro;
+}
+
+function nav_over(nav)
+{
+	document.getElementById('n'+nav).style.backgroundImage="url('{SITE_URL}templates/{TPL_NAME}/images/nav_back_over.gif')";
+	document.getElementById('l'+nav).style.color = '#6aa94e';
+}
+function nav_out(nav)
+{
+	document.getElementById('n'+nav).style.backgroundImage="url('')";
+	document.getElementById('l'+nav).style.color = '#626262';
+}
+function changeuser(field,but)
+{
+	if(field.value == '')
+	{
+		document.getElementById(but).disabled = true;
+	}
+	else
+	{
+		document.getElementById(but).disabled = false;
+	}
+}
+function checkavail(field,utype)
+{
+	username = document.getElementById(field).value;
+	
+	if(username.length < 4)
+	{
+		document.getElementById('availres').innerHTML = '{LANG_THEUSER} "'+username+'" {LANG_TOOSHORT}';
+		return;
+	}
+	else if(username.length > 16)
+	{
+		document.getElementById('availres').innerHTML = '{LANG_THEUSER} "'+username+'" {LANG_TOOLONG}';
+		return;
+	}
+	
+	http.open('get', '{SITE_URL}signup.php?type='+utype+'&avail='+username);
+    http.onreadystatechange = availResponse;
+    http.send(null);
+}
+function availResponse() 
+{
+	if(http.readyState == 4)
+	{
+        var response = http.responseText;
+		
+		returned = response.split('|');
+
+		if(response.indexOf('|' != -1)) 
+		{
+			var username=returned[0];
+			var status=returned[1];
+
+			if(status == 1)
+			{
+				document.getElementById('availres').innerHTML = '{LANG_THEUSER} "'+username+'" {LANG_ISAVAIL}';
+			}
+			else if(status == 2)
+			{
+				document.getElementById('availres').innerHTML = '{LANG_THEUSER} "'+username+'" {LANG_ISINVALID}';
+			}
+			else
+			{
+				document.getElementById('availres').innerHTML = '{LANG_SORRY}, {LANG_THEUSER} "'+username+'" {LANG_ISTAK}';
+			}
+		}
+	}
+}
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+	if(selObj.options[selObj.selectedIndex].value != '')
+	{
+		eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+		if (restore) selObj.selectedIndex=0;
+	}
+}
+</script>
+</head>
+<body>
+
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="{SITE_URL}"><img src="{SITE_URL}templates/{TPL_NAME}/images/logo.jpg" alt="{SITE_TITLE} Logo" width="780" height="139" hspace="0" vspace="0" border="0"></a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF" height="1"></td>
+  </tr>
+  <tr>
+    <td height="32" align="right" background="{SITE_URL}templates/{TPL_NAME}/images/nav_back.gif" bgcolor="#FFFFFF" style="border-left:1px solid #bfbfbf;border-right:1px solid #bfbfbf;"><table height="32" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        IF("{LOGGED_IN}"=="0"){<td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='{SITE_URL}login.php'" onMouseOver="nav_over('login');" onMouseOut="nav_out('login');" id="nlogin"><a href="{SITE_URL}login.php" id="llogin" class="topmenu">{LANG_LOGIN}</a></td>{:IF}
+        IF("{LOGGED_IN}"=="0"){<td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='{SITE_URL}signup.php'" onMouseOver="nav_over('signup');" onMouseOut="nav_out('signup');" id="nsignup"><a href="{SITE_URL}signup.php" id="lsignup" class="topmenu">{LANG_SIGNUP}</a></td>{:IF}
+        <td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='projects.php'" onMouseOver="nav_over('projects');" onMouseOut="nav_out('projects');" id="nprojects"><a href="{SITE_URL}projects.php" id="lprojects" class="topmenu">{LANG_PROJECTS}</a></td>
+        <td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='jobs.php'" onMouseOver="nav_over('jobs');" onMouseOut="nav_out('jobs');" id="njobs"><a href="{SITE_URL}jobs.php" id="ljobs" class="topmenu">{LANG_JOBS}</a></td>
+        <td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='users.php'" onMouseOver="nav_over('portfolios');" onMouseOut="nav_out('portfolios');" id="nportfolios"><a href="{SITE_URL}users.php" id="lportfolios" class="topmenu">{LANG_PORTFOLIOS}</a></td>
+        <td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='search.php'" onMouseOver="nav_over('search');" onMouseOut="nav_out('search');" id="nsearch"><a href="{SITE_URL}search.php" id="lsearch" class="topmenu">{LANG_SEARCH}</a></td>
+        IF("{USER_TYPE}"!="provider"){<td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='{SITE_URL}create_project.php'" onMouseOver="nav_over('createproj');" onMouseOut="nav_out('createproj');" id="ncreateproj"><a href="{SITE_URL}create_project.php" id="lcreateproj" class="topmenu">{LANG_CREATEPROJ}</a></td>{:IF}
+        IF("{USER_TYPE}"!="provider"){<td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td align="center" style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='{SITE_URL}create_job.php'" onMouseOver="nav_over('createjob');" onMouseOut="nav_out('createjob');" id="ncreatejob"><a href="{SITE_URL}create_job.php" id="lcreatejob" class="topmenu">{LANG_CREATEJOB}</a></td>{:IF}
+        <td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td align="center" style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='{SITE_URL}manage.php'" onMouseOver="nav_over('manage');" onMouseOut="nav_out('manage');" id="nmanage"><a href="{SITE_URL}manage.php" class="topmenu" id="lmanage">{LANG_MANAGEACC}</a></td>
+		IF("{MAILBOX_SHOW}"=="1"){<td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td align="center" style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='{SITE_URL}private.php'" onMouseOver="nav_over('inbox');" onMouseOut="nav_out('inbox');" id="ninbox"><a href="{SITE_URL}private.php" id="linbox" class="topmenu">{LANG_INBOX}</a></td>{:IF}
+		IF("{LOGGED_IN}"=="1"){<td width="2"><img src="{SITE_URL}templates/{TPL_NAME}/images/nav_sep.gif"></td><td align="center" style="cursor:pointer;padding-left:13px;padding-right:13px;" onclick="location.href='{SITE_URL}logout.php'" onMouseOver="nav_over('logout');" onMouseOut="nav_out('logout');" id="nlogout"><a href="{SITE_URL}logout.php" id="llogout" class="topmenu">{LANG_LOGOUT}</a></td>{:IF}
+	  </tr>
+    </table></td>
+  </tr>
+</table>

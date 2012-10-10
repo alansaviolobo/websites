@@ -1,0 +1,140 @@
+{OVERALL_HEADER}
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="templates/{TPL_NAME}/images/dot.gif" width="318" height="20" alt="" border="0"></td>
+    <td><img src="templates/{TPL_NAME}/images/dot.gif" width="231" height="1" alt="" border="0"></td>
+    <td><img src="templates/{TPL_NAME}/images/dot.gif" width="231" height="1" alt="" border="0"></td>
+  </tr>
+  <tr valign="top">
+    <td class="quote" style="padding:10px;padding-top:0px;">IF("{ENABLE_QUOTES}"=="1"){<span class="title3">{LANG_WELCTO} {USITE_TITLE}</span><br>
+"{QUOTE}" - {AUTHOR} (<a href="quotes.php" class="quote">{LANG_MOREQUOTES}</a>){:IF}
+    </td>
+    <td>
+      <table width="227" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="padding-top:10px;"><img src="templates/{TPL_NAME}/images/box_top.gif" width="227" height="14" alt="" border="0"></td>
+        </tr>
+        <tr>
+          <td class="normal" style="padding:10px;border-left:1px solid #aaaaaa;border-right:1px solid #aaaaaa;"> <img src="templates/{TPL_NAME}/images/image_buyer.jpg" width="63" height="41" alt="" border="0" align="left" hspace="10" vspace="5"> <span class="title2">{LANG_BUYERU}</span> <br>
+            {LANG_JOBDONE}<br>
+            <br>
+            <table border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><a href="signup.php?type=buyer"><img src="templates/{TPL_NAME}/images/button_signup.gif" width="66" height="16" alt="" border="0" hspace="5" align="absmiddle"></a></td>
+                <td><a href="create_project.php"><img src="templates/{TPL_NAME}/images/button_createproject.gif" width="116" height="16" alt="" border="0"></a></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><img src="templates/{TPL_NAME}/images/box_bottom.gif" width="227" height="14" alt="" border="0"></td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table width="227" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="padding-top:10px;"><img src="templates/{TPL_NAME}/images/box_top.gif" width="227" height="14" alt="" border="0"></td>
+        </tr>
+        <tr class="normal">
+          <td style="padding:10px;border-left:1px solid #aaaaaa;border-right:1px solid #aaaaaa;"> <img src="templates/{TPL_NAME}/images/image_provider.jpg" width="63" height="41" alt="" border="0" align="left" hspace="10" vspace="5"> <span class="title2">{LANG_PROVIDERU}</span><br>
+            {LANG_PROVIDESER}<br>
+            <br>
+            <table border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><a href="projects.php"><img src="templates/{TPL_NAME}/images/view_projects.gif" width="116" height="16" alt="" border="0" hspace="5" align="absmiddle"></a> </td>
+                <td><a href="signup.php?type=provider"><img src="templates/{TPL_NAME}/images/button_signup.gif" width="66" height="16" alt="" border="0"></a></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><img src="templates/{TPL_NAME}/images/box_bottom.gif" width="227" height="14" alt="" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><br><span class="title1">{LANG_JOBLIST}</span>     <br>
+      <table width="780" cellpadding="0" cellspacing="1" border="0">
+        <tr bgcolor="#E1E1E1" align="center" class="table_titles">
+          <td align="left" height="18" style="padding-left:5px;">{LANG_JOBTITLE}</td>
+          <td width="30%" align="left" style="padding-left:5px;">{LANG_COMPANY}</td>
+          <td width="30%" align="left" style="padding-left:5px;">{LANG_CATEGORY}</td>
+        </tr>
+  {LOOP: JOB_LISTINGS}
+  <tr align="center" class="table_titles">
+    <td align="left" style="padding-left:5px;"><a href="{JOB_LISTINGS.link}">{JOB_LISTINGS.title}</a></td>
+    <td align="left" style="padding-left:5px;"><div align="left">{JOB_LISTINGS.company}</div></td>
+    <td align="left" style="padding-left:5px;">{JOB_LISTINGS.category}</td>
+  </tr>
+  <tr>
+    <Td colspan="5" background="templates/{TPL_NAME}/images/hline_dot.gif"><img src="templates/{TPL_NAME}/images/dot.gif" width="1" height="1" alt="" border="0"></TD>
+  </tr>
+  {/LOOP: JOB_LISTINGS}
+  <tr>
+    <td colspan="5"><a href="jobs.php"><img src="templates/{TPL_NAME}/images/button_viewall.gif" width="76" height="16" alt="" border="0" hspace="0" vspace="10"></a></td>
+  </tr>
+      </table>      
+      <br>      
+      <span class="title1">{LANG_FEATPROJ}</span><br>
+      <!--End Featured Projects-->
+      <table width="780" cellpadding="0" cellspacing="1" border="0">
+        <tr bgcolor="#E1E1E1" align="center" class="table_titles">
+          <td width="40%" align="left" height="18" style="padding-left:5px;">{LANG_PROJNAME}</td>
+          <td width="6%" bgcolor="#E1E1E1">{LANG_BIDS}</td>
+          <td width="30%" align="left" style="padding-left:5px;">{LANG_JOBTYPE}</td>
+          <td width="12%">{LANG_STARTED}</td>
+          <td width="12%">{LANG_ENDS}</td>
+        </tr>
+  {LOOP: FEATURED_PROJECTS}
+  <tr align="center" class="table_titles">
+    <td align="left" style="padding-left:5px;"><a href="{FEATURED_PROJECTS.link}">{FEATURED_PROJECTS.title}</a></td>
+    <td>{FEATURED_PROJECTS.bids}</td>
+    <td align="left" style="padding-left:5px;">{FEATURED_PROJECTS.types}</td>
+    <td>{FEATURED_PROJECTS.startdate}</td>
+    <td>{FEATURED_PROJECTS.enddate}</td>
+  </tr>
+  <tr>
+    <Td colspan="5" background="templates/{TPL_NAME}/images/hline_dot.gif"><img src="templates/{TPL_NAME}/images/dot.gif" width="1" height="1" alt="" border="0"></TD>
+  </tr>
+  {/LOOP: FEATURED_PROJECTS}
+  <tr>
+    <td colspan="5"><a href="projects.php?filter=featured"><img src="templates/{TPL_NAME}/images/button_viewall.gif" width="76" height="16" alt="" border="0" hspace="0" vspace="10"></a></td>
+  </tr>
+      </table>
+      <!--End Featured Projects-->
+      <!--End Featured Projects--><br>
+      <span class="title1">{LANG_LATPROJ}</span><br>
+      <!--End Latest Projects-->
+      <table width="780" cellpadding="0" cellspacing="1" border="0">
+        <tr bgcolor="#E1E1E1" align="center" class="table_titles">
+          <td width="40%" align="left" height="18" style="padding-left:5px;">{LANG_PROJNAME}</td>
+          <td width="6%">{LANG_BIDS}</td>
+          <td width="30%" align="left" style="padding-left:5px;">{LANG_JOBTYPE}</td>
+          <td width="12%">{LANG_STARTED}</td>
+          <td width="12%">{LANG_ENDS}</td>
+        </tr>
+  {LOOP: LATEST_PROJECTS}
+  <tr align="center" class="table_titles">
+    <td align="left" style="padding-left:5px;"><a href="{LATEST_PROJECTS.link}">{LATEST_PROJECTS.title}</a>
+IF("{LATEST_PROJECTS.featured}"=="1"){&nbsp; <span class="featured">{LANG_FEATURED}</span>{:IF} IF("{LATEST_PROJECTS.urgent}"=="1"){&nbsp; <span class="urgent">{LANG_URGENT}</span>{:IF}
+</td>
+    <td>{LATEST_PROJECTS.bids}</td>
+    <td align="left" style="padding-left:5px;">{LATEST_PROJECTS.types}</td>
+    <td>{LATEST_PROJECTS.startdate}</td>
+    <td>{LATEST_PROJECTS.enddate}</td>
+  </tr>
+  <tr>
+    <Td colspan="5" background="templates/{TPL_NAME}/images/hline_dot.gif"><img src="templates/{TPL_NAME}/images/dot.gif" width="1" height="1" alt="" border="0"></TD>
+  </tr>
+  {/LOOP: LATEST_PROJECTS}
+  <tr>
+    <td colspan="5"><a href="projects.php"><img src="templates/{TPL_NAME}/images/button_viewall.gif" width="76" height="16" alt="" border="0" hspace="0" vspace="10"></a><br>
+      <br></td>
+  </tr>
+    </table></td>
+  </tr>
+</table>
+IF("{CRON}"=="1"){<img src="{SITE_URL}cron.php?rand={TIMESTAMP}" width="1" height="1" border="0" alt="">{:IF}
+{OVERALL_FOOTER}

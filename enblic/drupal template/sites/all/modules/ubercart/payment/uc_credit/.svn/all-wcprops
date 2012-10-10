@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit
+END
+uc_credit.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/uc_credit.admin.inc
+END
+test_gateway.module
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/test_gateway.module
+END
+uc_credit.module
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/uc_credit.module
+END
+uc_credit.install
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/uc_credit.install
+END
+uc_credit.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/uc_credit.pages.inc
+END
+test_gateway.info
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/test_gateway.info
+END
+uc_credit.info
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/uc_credit.info
+END
+uc_credit.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_credit/uc_credit.js
+END

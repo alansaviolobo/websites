@@ -1,0 +1,193 @@
+<?php
+
+function user_profile_menu() {
+	$items = array ();
+	$items ['user_profile'] ['title'] = t ( 'Profile' );
+	$items ['user_profile'] ['page callback'] = 'user_profile';
+	$items ['user_profile'] ['page arguments'] = array (1 );
+	$items ['user_profile'] ['access arguments'] = array ('access content' );
+	$items ['user_profile'] ['type'] = MENU_CALLBACK;
+	return $items;
+}
+
+function user_profile_user($op, &$edit, &$account, $category = NULL) {
+	if ($op != 'insert')
+		return;
+
+	profile_load_profile ( $account );
+	$full_name = "$account->profile_first_name $account->profile_last_name";
+	$sex = $account->profile_gender == 'Male' ? 1 : 0;
+	$bdate = $account->profile_birthdate;
+	$age = round ( (time () - mktime ( 0, 0, 0, $bdate ["month"], $bdate ["day"], $bdate ["year"] )) / (60 * 60 * 24 * 365) );
+
+	mssql_connect ( "79.171.178.134", "enblic", "enblic" );
+	mssql_select_db ( "ENBLIC_ACCOUNT" );
+	mssql_query ( "EXEC spCreateAccount '$account->name', '{$edit['pass']}', '$full_name', $sex, $age, '$account->profile_country', 1" );
+}
+
+function user_profile() {
+	global $user;
+	if ($user->uid == null)
+		drupal_goto ( 'user/login' );
+	elseif ($user->uid == 1)
+		drupal_goto ( 'admin' );
+
+	profile_load_profile ( $user );
+	list ( $maleChecked, $femaleChecked ) = $user->profile_gender == 'Male' ? array ('checked', null ) : array (null, 'checked' );
+
+	$db = mssql_connect ( "79.171.178.134", "enblic", "enblic" );
+	mssql_select_db ( "ENBLIC_GAME", $db );
+
+	$query = "SELECT * FROM (
+				SELECT cb.dwWinNum + cb.dwLossNum + cb.dwDrawNum AS totalmatches,
+					   cb.dwWinNum AS wins, cb.dwLossNum AS losses,
+					   wLevel AS level, szClubName AS club, cb.dwCharID
+				  FROM ENBLIC_ACCOUNT.dbo.ACCOUNT_BASIC AB
+				  JOIN ENBLIC_GAME.dbo.CHAR_BASIC CB
+				    ON AB.nLatestCharID = CB.dwCharID
+	   LEFT OUTER JOIN ENBLIC_GAME.dbo.CLUB_INFO CI
+				    ON CB.dwClubID = CI.dwClubID
+				 WHERE szAccount = '$user->name' ) t1
+	LEFT OUTER JOIN (
+				SELECT dwCharId, COUNT(dwItemID) AS items
+				  FROM ENBLIC_GAME.dbo.ITEM_SACK
+			  GROUP BY dwCharID
+	) t2 ON t1.dwCharID = t2.dwCharID
+	LEFT OUTER JOIN (
+				SELECT dwCharId, COUNT(dwSkillID) AS skills
+				  FROM ENBLIC_GAME.dbo.SKILL_SACK
+			  GROUP BY dwCharID
+	) t3 ON t1.dwCharID = t3.dwCharID";
+	$char_info = mssql_fetch_object ( mssql_query ( $query, $db ) );
+	mssql_close ( $db );
+
+	$profile = t ( 'PROFILE' );
+	$username = t ( 'Username' );
+	$password = t ( 'Password' );
+	$confirm_password = t ( 'Confirm Password' );
+	$email = t ( 'E-mail' );
+	$gender = t ( 'Gender' );
+	$male = t ( 'Male' );
+	$female = t ( 'Female' );
+	$birthdate = t ( 'Date Of Birth' );
+	$country = t ( 'Country' );
+	$game_data = t ( 'GAME DATA' );
+	$level = t ( 'Level' );
+	$matches_played = t ( 'Matches Played' );
+	$matches_won = t ( 'Matches Won' );
+	$matches_lost = t ( 'Matches Lost' );
+	$club = t ( 'Club' );
+	$total_ranking_list = t ( 'Total Ranking List' );
+	$account_data = t ( 'ACCOUNT DATA' );
+	$total_points = t ( 'Total Points' );
+	$items_purchased = t ( 'Items Purchased' );
+	$skills_purchased = t ( 'Skills Purchased' );
+
+	return "
+<div style='border-color:gray; border-style:solid;padding:15px;'>
+	<span>$profile</span>
+	<br /><br />
+	<table style='color:white;'>
+		  <tbody>
+		      <tr>
+		          <td>$username:</td>
+		          <td><input type='text' disabled='disabled' name='username' value='$user->name' /></td>
+		      </tr>
+		      <tr>
+		          <td>$password:</td>
+		          <td><input type='password' disabled='disabled' name='password' /></td>
+		      </tr>
+		      <tr>
+		          <td>$confirm_password:</td>
+		          <td><input type='password' disabled='disabled' name='pass_con' /></td>
+		      </tr>
+		      <tr>
+		          <td>$email:</td>
+		          <td><input type='text' disabled='disabled' name='email' value='$user->mail' /></td>
+		      </tr>
+		      <tr>
+		          <td>$gender:</td>
+		          <td>
+		          	<input type='radio' disabled='disabled' name='gender' value='Male' $maleChecked />$male
+		          	<input type='radio' disabled='disabled' name='gender' value='Female' $femaleChecked />$female
+		          </td>
+		      </tr>
+		      <tr>
+		          <td>$birthdate:</td>
+		          <td>
+		          	<select disabled='disabled' name='dob[d]' />
+		          		<option value='{$user->profile_birthdate ['day']}'>{$user->profile_birthdate ['day']}</option>
+		          	</select>
+		          	<select disabled='disabled' name='dob[M]' />
+		          		<option value='{$user->profile_birthdate ['month']}'>{$user->profile_birthdate ['month']}</option>
+		          	</select>
+		          	<select disabled='disabled' name='dob[Y]' />
+		          		<option value='{$user->profile_birthdate ['year']}'>{$user->profile_birthdate ['year']}</option>
+		          	</select>
+		          </td>
+		      </tr>
+		      <tr>
+		          <td>$country:</td>
+		          <td>
+		          	<select disabled='disabled' name='country' />
+		          		<option value='{$user->profile_country}'>{$user->profile_country}</option>
+		          	</select>
+		          </td>
+		      </tr>
+		  </tbody>
+	</table>
+	</div>
+	<div style='border-color:gray; border-style:solid;padding:15px;'>
+	<span>$game_data:</span>
+	<br /><br />
+	<table style='color:white'>
+		  <tbody>
+		      <tr>
+		          <td>$level:</td>
+		          <td><input type='text' disabled='disabled' name='level' value='$char_info->level' /></td>
+		      </tr>
+		      <tr>
+		          <td>$matches_played:</td>
+		          <td><input type='text' disabled='disabled' name='matches_played' value='$char_info->totalmatches' /></td>
+		      </tr>
+		      <tr>
+		          <td>$matches_won:</td>
+		          <td><input type='text' disabled='disabled' name='matches_won' value='$char_info->wins' /></td>
+		      </tr>
+		      <tr>
+		          <td>$matches_lost:</td>
+		          <td><input type='text' disabled='disabled' name='matches_lost' value='$char_info->losses' /></td>
+		      </tr>
+		      <tr>
+		          <td>$club:</td>
+		          <td><input type='text' disabled='disabled' name='club' value='$char_info->club' /></td>
+		      </tr>
+		      <tr>
+		          <td>$total_ranking_list:</td>
+		          <td><input type='text' disabled='disabled' name='rank_list' value='' /></td>
+		      </tr>
+		  </tbody>
+	</table>
+	</div>
+	<div style='border-color:gray; border-style:solid;padding:15px;'>
+	<span>$account_data:</span>
+	<br /><br />
+	<table style='color:white'>
+		  <tbody>
+		      <tr>
+		          <td>$total_points:</td>
+		          <td><input type='text' disabled='disabled' name='total_points' value='' /></td>
+		      </tr>
+		      <tr>
+		          <td>$items_purchased:</td>
+		          <td><input type='text' disabled='disabled' name='items_purchased' value='$char_info->items' /></td>
+		      </tr>
+		      <tr>
+		          <td>$skills_purchased:</td>
+		          <td><input type='text' disabled='disabled' name='skills_purchased' value='$char_info->skills' /></td>
+		      </tr>
+		  </tbody>
+	</table>
+</div>";
+}
+?>

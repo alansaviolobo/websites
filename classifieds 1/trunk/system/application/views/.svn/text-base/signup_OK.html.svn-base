@@ -1,0 +1,10 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">{SITENAME} &gt; Signup</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div style="clear: both; padding: 10px; font-size: 15px;">
+<div class="title2"><strong>Account created successfully</strong></div>
+<p>Thank you for registering on our site. You will receive the
+activation code for the account within the next few minutes.</p>
+</div>

@@ -1,0 +1,14 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">{SITENAME} &gt; Signup &gt;
+Activation</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div style="clear: both; padding: 10px; font-size: 15px;">
+<div class="title2"><strong>Account NOT ACTIVATED</strong></div>
+<p>The activation code is wrong, please try to copy paste the code
+from the email you received into your browser's address bar.</p>
+<p>If you haven't received your activation code please <a
+	href="{site_url}/main/resend_activation/" class="green"><strong>click
+here</strong></a> to resend it</p>
+</div>

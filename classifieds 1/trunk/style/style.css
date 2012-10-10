@@ -1,0 +1,290 @@
+/* CSS Document */
+body {
+	font-family:arial;
+	font-size:11px;
+	background-color:#FFFDE9;
+	margin:0px;
+	padding-bottom:10px;
+}
+.post_div{
+	background-color:#5FAD46;
+	padding:4px;
+	color:#FFFFFF;
+	text-decoration:none;
+	float:right;
+}
+.logo{
+	padding-top:20px;
+}
+.post_div a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.listing_body{
+	font-size:13px;
+	padding:10px;
+	color:#082139;
+}
+.listing_details{
+	background-color:#e7e7e7; 
+	padding-top:5px; 
+	padding-bottom:5px;
+	color:#000000;
+}
+#wrapper {
+	width:980px;
+	overflow:hidden;
+	border:solid 4px #D6E8BF;
+	background-color:#FFFDE9;
+	margin-left:auto;
+	margin-right:auto;	
+	margin-top:10px;
+	margin-bottom:10px;	
+	padding-top:8px;
+	padding-bottom:8px;	
+}
+
+#col_header {
+	margin-left:8px;
+	margin-right:8px;	
+	width:225px;
+	float:left;
+}
+
+#col_header .video{
+	margin-top:20px;
+	clear:both;
+}		
+
+
+#col_header .search_box{
+	margin-top:30px;
+	margin-bottom:10px;
+	clear:both;
+	padding:8px;
+	background-color:#5FAD46;
+}
+
+
+.table_view {
+
+}
+
+.table_view .tb_row {
+	clear:both;
+	overflow:hidden;
+	border-bottom:solid 1px #F1F1F1;
+}
+		
+.table_view .tb_col {
+	float:left;
+	width:110px;
+	border:solid 1px #F1F1F1;
+	border-bottom:solid 0px #F1F1F1;	
+	
+	border-left:solid 0px #F1F1F1;	
+
+	
+	text-align:center;
+	font-size:13px;
+	font-weight:900;
+	color:#072039;
+	padding-top:2px;
+	padding-bottom:2px;	
+}
+
+
+.table_view a {
+	color:#072039;
+	text-decoration:none;
+}
+
+.table_view a:hover {
+	color:#009900;
+	text-decoration:none;
+}
+
+
+#col_two {
+	float:left;
+	width:250px;
+	
+	margin-left:8px;
+	margin-right:2px;	
+	overflow:hidden;	
+}
+
+
+.list1 {
+	float:left;
+	width:100px;
+	border:solid 1px #E2E2E1;
+	background-color:#F1F1F1;
+	padding-left:10px;
+	padding-right:10px;	
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-right:3px;	
+}
+
+.list1_items {
+	padding-top:10px;
+
+}
+
+.list1_items a {
+	color:#000000;
+	text-decoration:none;
+}
+
+.list1_items a:hover {
+	color:#009900;
+}
+
+.list1_items div{
+	padding-bottom:2px;
+}
+
+
+
+.title1 {
+	font-size:24px;
+	color:#5FAB46;
+}
+
+
+.title2 {
+	font-size:18px;
+	color:#5FAB46;
+}
+
+.green {
+	color:#5FAB46;
+}
+
+.col_list {
+	width:150px;
+	color:#FFFFFF;
+	font-size:14px;
+	float:left;
+	margin-right:6px;
+}
+
+.block_list {
+	padding-top:10px;
+	margin-bottom:10px;
+}
+
+.block_title {
+	margin-top:10px;
+	background-color:#5FAD46;
+	padding:5px;
+	text-align:center;
+}
+
+.list2_item {
+	border-top:solid 1px #CCCCCC;
+	border-bottom:0px;		
+	width:100%;	
+	clear:both;
+}
+.city_div{
+	width:140px;	
+	float:left;
+	color:#082139;
+	font-size:12px;
+	text-decoration:none;
+	padding-left:15px;
+	padding-top:2px;
+	padding-bottom:2px;	
+	background-image:url(../images/bullet_grey.jpg);
+	background-repeat:no-repeat;
+	background-position:5% center;
+}
+
+.list2_link {
+	background-color:#FFFFFF;
+
+	width:133px;	
+	float:left;
+	color:#082139;
+	font-size:12px;
+	text-decoration:none;
+	padding-left:15px;
+	padding-top:2px;
+	padding-bottom:2px;	
+	background-image:url(../images/bullet_grey.jpg);
+	background-repeat:no-repeat;
+	background-position:5% center;
+}
+
+.list2_link:hover {
+	background-color:#F9F9F9;
+	background-image:url(../images/bullet.jpg);
+	background-repeat:no-repeat;
+	background-position:5% center;
+}
+
+
+
+.btn_submit {
+	background-color:#38931B;
+	font-size:11px;
+	color:#FFFFFF;
+	border:0px;
+	padding:2px;
+}
+
+.btn_link {
+	background-color:#5FAD46;
+	font-size:11px;
+	color:#FFFFFF;
+	border:0px;
+	padding:5px;
+	text-decoration:none;
+	text-align:center;
+}
+
+
+.btn_link a{
+	background-color:#5FAD46;
+	font-size:11px;
+	color:#FFFFFF;
+	border:0px;
+	padding:5px;
+	text-decoration:none;
+}
+
+
+.textbox {
+	font-size:13px;
+}
+.listing_link {
+	padding:10px;
+}
+.listing_link a {
+	font-size:12px;
+	text-decoration:none;
+	color:#082139;
+}
+.date_title{
+	background-color:#5FAD46;
+	padding:8px;
+	text-align:left;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+}
+.gray_box{
+	background-color:#F0F0F0;
+	border:1px solid #EAEAEA;
+	padding:10px;
+	margin-bottom:10px;
+}
+.green_button{
+	background-color:#5FAD46;
+	padding:4px;
+	border:0px;
+	color:#FFFFFF;
+	font-weight:bold;
+}

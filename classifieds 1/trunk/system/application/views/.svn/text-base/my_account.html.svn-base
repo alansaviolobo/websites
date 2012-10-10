@@ -1,0 +1,23 @@
+<div class="date_title">My Listings</div>
+{list}
+<div class="listing_link" style="clear: both; float: left;"><a
+	href="{site_url}/listings/details/{list_id}" target="_blank">{list_name}</a>{list_imgs}<img
+	src="http://albuquerque.backpage.com/images/camera.gif" alt="Picture"
+	title="Picture" width="14" height="11" />{/list_imgs} ({list_location}
+- {list_cat})</div>
+<div style="float: right;"><strong><a
+	href="{site_url}/listings/edit/{list_uid}" target="_blank" class="green">[edit]</a></strong>
+&nbsp;&nbsp;<strong><a
+	href="{site_url}/listings/delete/{list_id}" class="green">[delete]</a></strong></div>
+{/list} {no_results}
+<div
+	style="font-size: 13px; padding: 10px; padding-left: 6px; padding-right: 6px;"><strong>You
+don't have any listings</strong></div>
+{/no_results}
+<div style="clear: both;">&nbsp;</div>
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div class="post_div"><a href="{site_url}/account/edit">Change
+My Info</a></div>
+<div class="post_div"><a href="{site_url}/listings/add/">Post</a></div>
+</div>

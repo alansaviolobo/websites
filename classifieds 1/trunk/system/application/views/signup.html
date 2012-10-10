@@ -1,0 +1,66 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">{SITENAME} > Signup</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div>
+<form action="{site_url}/account/activate/" method="post">
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td><strong>Email:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="email" type="text" id="email_signup"
+			style="width: 380px;" value="{email}" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>Username:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="nick" type="text" id="nick"
+			style="width: 380px;" value="{username}"
+			class="required_input no_space" /></td>
+	</tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+
+	<tr class="listing_body">
+		<td width="100%"><strong>Password</strong></td>
+	</tr>
+	<tr>
+		<td><input name="pass" type="password" id="pass"
+			style="width: 380px;" value="{password}" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>Password again</strong></td>
+	</tr>
+	<tr>
+		<td><input name="pass2" type="password" id="pass2"
+			style="width: 380px;" value="{password}" class="required_input" /></td>
+	</tr>
+
+	<tr></tr>
+</table>
+</div>
+<div class="gray_box listing_body">
+<div style="clear: both; padding-top: 10px;"><img
+	src="{site_url}/images/captchas/{uid}.gif" /></div>
+{wrong_code}
+<div style="clear: both; padding-top: 10px; color: #FF0000;"><strong>
+The code you inputed was wrong. Please try again </strong></div>
+{/wrong_code}
+<div style="clear: both; padding-top: 10px;">Can't see the
+5character string above?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+	href="{site_url}/account/signup/" class="btn_link">refresh</a></div>
+
+<div style="clear: both;"><strong>
+<p>Please insert the code</p>
+<input type="text" name="code" id="code" style="width: 200px;"
+	class="required_input" /> </strong></div>
+</div>
+
+<input name="submit" type="submit" value="  Continue  "
+	class="green_button" /></form>

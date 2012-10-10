@@ -1,0 +1,27 @@
+<form action="{site_url}/admin/users/save/" method="post"
+	style="padding: 20px;">
+<p class="title2">Edit User</p>
+<table width="90%" border="0" align="center" cellpadding="10"
+	cellspacing="0">
+	<tr>
+		<td width="22%" valign="top"><strong>Username</strong></td>
+		<td width="78%" valign="top"><input name="username" type="text"
+			id="username" style="width: 300px;" value="{username}"></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>Password</strong></td>
+		<td valign="top"><input name="password" type="text" id="password"
+			style="width: 300px;" value="{password}" /></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>Email</strong></td>
+		<td valign="top"><input name="email" type="text" id="email"
+			style="width: 300px;" value="{email}"></td>
+	</tr>
+	<tr>
+		<td><input name="id" type="hidden" id="id" value="{id}" /></td>
+		<td><input type="submit" name="button" id="button"
+			value="  Change  "></td>
+	</tr>
+</table>
+</form>

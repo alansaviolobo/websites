@@ -1,0 +1,45 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top"><br>
+        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+             </tr>
+            <tr>
+              <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+            </tr>
+          </table></td>
+            <td><form action="paypal_add.php?id={PROJECT_ID}" method="post" enctype="multipart/form-data" name="form1">
+			<table  border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="normal">{LANG_BEFOREPAYPAL}<br>
+                  <Br><br><strong>{LANG_PAYPALADDR}</strong><br>
+	  <input name="paypal" type="text" id="paypal">
+      <br><span class="error">{PAYPAL_ERROR}</span>      <br>
+      <br>
+      <input type="submit" name="Submit" value="{LANG_ADDPAYPAL}"> <input type="hidden" name="id" id="id" value="{PROJECT_ID}">
+      <br>
+      <br></td>
+              </tr>
+            </table>      </form></td>
+          </tr>
+        </table>
+
+    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

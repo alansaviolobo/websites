@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href = "css/styles.css"  media="screen"  />
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href = "css/ie.css"  media="screen"  />
+		<![endif]-->
+	</head>
+	<body>
+		<div class="header-portion">
+			<div class="content-part">
+				
+				<div class="align-vertical-center absolute-right">
+					<div class="float-left">Name:</div>
+					<div class="float-left"><input type="text" /></div>
+					<div class="float-left">Password:</div>
+					 <div class="float-left width-150"><input type="text" /></div>
+					<ul class="float-left">
+						<li><a href="#">Einloggen</a>
+						</li>
+						<li><a href="#">Mein Konto</a>
+						</li>
+						<li class="last"><a href="#">Deutsch(DE)</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="body-portion">
+			<div class="content-part">
+				<div class="menu-portion">
+					<div class="menu-content">	
+						<div class="main-menu">
+							<ul class="absolute-right">
+								<li class="selected"><a href="#">HOME</a>
+								</li>
+								<li><a href="#">NEWS</a>
+								</li>
+								<li><a href="#">COMMUNITY</a>
+								</li>
+								<li><a href="#">TURNIERE</a>
+								</li>
+								<li><a href="#">SHOP</a>
+								</li>
+								<li class="last"><a href="#">SUPPORT</a>
+								</li>
+							</ul>
+						
+						</div>
+						<div class="sub-menu">
+							<ul  class="absolute-left">
+								<li><a href="#">SPIELINFO</a>
+								</li>
+								<li><a href="#">INSTALLATION</a>
+								</li>
+								<li><a href="#">SCREENSHOTS</a>
+								</li>
+								<li><a href="#">VIDEO</a>
+								</li>
+								<li  class="last"><a href="#">DOWNLOAD</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-logo">
+				</div>
+				<div class="bottom-menu">
+					<div class="center"><a href="#"></a>
+					</div>
+					<div class="last"><a href="#"></a>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content-left">
+						<div class="content-block">
+							<div class="outer-title-border">
+								<div class="inner-title-border">
+									MEIN KONTO
+								</div>
+							</div>
+							<div class="outer-content-border">
+								<div class="inner-content-border">
+									<div>
+										Wähle eine Download-Methode und lade den Enblic-Client auf dein
+									</div>
+								
+									<div class="register">BENUTZERNAME:  </div>
+									<div class="boxes"><input type="text"/></div>	
+									<div class="register">EMAIL-ADDRESSE:</div>	
+									<div class="boxes"><input type="text"/></div>	
+									<div class="register">PASSWORT:</div>	
+									<div class="boxes"><input type="text"/></div>
+									<div class="register"></div>	
+									<div class="boxes"><input type="submit" value=" JETZT ANMELDEN" /></div>
+									<div class="clear-float">
+									</div>
+									
+								</div>	
+								
+							</div>
+								
+						</div>
+					
+					</div>
+					<div class="content-right">
+						<div class="banner_300_by_600">
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-block">
+					<div class="outer-title-border">
+						<div class="inner-title-border">
+							<ul>
+								<li><a href="#">ABG</a></li>
+								<li><a href="#">Datenschutz</a></li>
+								<li><a href="#">Urheberrecht</a></li>
+								<li><a href="#">Nutzervereinbarungen</a></li>
+								<li><a href="#">Impressum</a></li>
+								<li><a href="#">Jugendschutz</a></li>
+								<li><a href="#">Gesundheit</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="outer-content-border">
+						<div class="inner-content-border">		
+							<div class="footer-message">
+								<div class="footer-logo"></div>
+								<div class="copyrights">
+									© 2010 COWON / EFUSION X Limited. Alle Rechte vorbehalten. COWON Logos und Designs sind Warenzeichen oder eingetragene Warenzeichen der COWON Corporation. EFUSION-X Logos und Designs sind Warenzeichen oder eingetragene Warenzeichen der 
+EFUSION X LIMITED. Alle anderen eingetragenen Warenzeichen oder Warenzeichen sind das Eigentum ihrer jeweiligen Besitzer. 
+Firmennummer: XXXXX. Mehrwertsteuernummer: XXXXXXXXXX.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

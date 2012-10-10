@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/docs
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/docs/license.txt
+END
+install.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/docs/install.txt
+END
+upgrade.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/docs/upgrade.txt
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/freelancing%201/trunk/docs/.htaccess
+END

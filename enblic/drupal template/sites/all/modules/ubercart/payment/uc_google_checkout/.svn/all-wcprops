@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_google_checkout
+END
+uc_google_checkout.info
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_google_checkout/uc_google_checkout.info
+END
+uc_google_checkout.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_google_checkout/uc_google_checkout.admin.inc
+END
+uc_google_checkout.module
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_google_checkout/uc_google_checkout.module
+END
+uc_google_checkout.install
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_google_checkout/uc_google_checkout.install
+END
+uc_google_checkout.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/payment/uc_google_checkout/uc_google_checkout.pages.inc
+END

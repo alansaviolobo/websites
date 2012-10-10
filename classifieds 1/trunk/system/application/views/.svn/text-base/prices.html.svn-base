@@ -1,0 +1,41 @@
+<form action="{site_url}/admin/prices/save/" method="post"
+	style="padding: 20px;">
+<table width="90%" border="0" align="center" cellpadding="10"
+	cellspacing="0">
+	<tr>
+		<td valign="top"><strong>Housing</strong></td>
+		<td valign="top">$ <input name="cat1" type="text" id="cat1"
+			style="width: 300px;" value="{value_1}" /></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>Services</strong></td>
+		<td valign="top">$ <input name="cat2" type="text" id="cat2"
+			style="width: 300px;" value="{value_2}" /></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>Jobs</strong></td>
+		<td valign="top">$ <input name="cat3" type="text" id="cat3"
+			style="width: 300px;" value="{value_3}" /></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>Personals</strong></td>
+		<td valign="top">$ <input name="cat4" type="text" id="cat4"
+			style="width: 300px;" value="{value_4}" /></td>
+	</tr>
+	<tr>
+		<td valign="top"><strong>For sale</strong></td>
+		<td valign="top">$ <input name="cat5" type="text" id="cat5"
+			style="width: 300px;" value="{value_5}" /></td>
+	</tr>
+	<tr>
+		<td width="22%" valign="top"><strong>Community</strong></td>
+		<td width="78%" valign="top">$ <input name="cat117" type="text"
+			id="cat117" style="width: 300px;" value="{value_117}"></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><input type="submit" name="submit" id="submit"
+			value="  Change  "></td>
+	</tr>
+</table>
+</form>

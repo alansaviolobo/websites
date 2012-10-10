@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/shipping/uc_usps
+END
+uc_usps.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/shipping/uc_usps/uc_usps.admin.inc
+END
+uc_usps.countries.inc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/shipping/uc_usps/uc_usps.countries.inc
+END
+uc_usps.module
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/shipping/uc_usps/uc_usps.module
+END
+uc_usps.install
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/shipping/uc_usps/uc_usps.install
+END
+uc_usps.info
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/shipping/uc_usps/uc_usps.info
+END

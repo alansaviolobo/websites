@@ -1,0 +1,53 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0" class="normal">
+  <tr>
+    <td valign="top">      <form name="form1" method="post" action="">
+        {LOOP: ERRORS}<span class="error">- {ERRORS.message}</span><br>
+{/LOOP: ERRORS} <br>
+<br>
+<table width="600"  border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td><strong>{LANG_USERNAME}</strong></td>
+  </tr>
+  <tr>
+    <td>{USERNAME}</td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td><strong>{LANG_PROJECT}:</strong></td>
+  </tr>
+  <tr>
+    <td>{PROJECT_NAME}</td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td><strong>{LANG_MESSAGE}:</strong></td>
+  </tr>
+  <tr>
+    <td><textarea name="message" cols="60" rows="9" id="textarea">{MESSAGE}</textarea></td>
+  </tr>
+  <tr>
+    <td><strong>{LANG_MESSAGETO}:</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <select name="private">
+        {EVERYONE}
+		{LOOP: TO}
+		<option value="{TO.id}">{TO.username}</option>
+		{/LOOP: TO}
+      </select></td>
+  </tr>
+  <tr>
+    <td><input type="submit" name="Submit" value="{LANG_SUBMESS}">
+        <input type="hidden" name="id" id="id" value="{ID}"></td>
+  </tr>
+</table>
+      </form>
+      <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

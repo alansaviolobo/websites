@@ -1,0 +1,54 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top">    <br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+          <tr>
+            <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+          </tr>
+          <tr>
+            <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+          </tr>
+          <tr>
+            <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+          </tr>
+          <tr>
+            <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+          </tr>
+          <tr>
+            <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+          </tr>
+        <tr>
+          <td>- <a href="escrow.php">{LANG_ESCROWM}</a></td>
+        </tr>
+        <tr>
+              <td>- <a href="upgrade.php">{LANG_UPGRADES}</a></td>
+            </tr>
+          <tr>
+            <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+          </tr>
+        </table></td>
+        <td valign="top" class="normal"><strong>{LANG_TRANSACTIONS}:</strong><br>
+          <table width="100%"  border="0" cellpadding="4" cellspacing="1">
+            <tr bgcolor="#E1E1E1" class="normal">
+              <td width="100" height="18">{LANG_AMOUNT}</td>
+              <td width="100" height="18">{LANG_STATUS}</td>
+              <td height="18">{LANG_DESC}</td>
+              <td height="18">{LANG_DATE}</td>
+            </tr>
+  {LOOP: TRANSACTIONS}
+  <tr class="normal">
+    <td height="18">{TRANSACTIONS.sign} {TRANSACTIONS.amount}</td>
+    <td height="18">{TRANSACTIONS.status}</td>
+    <td height="18">{TRANSACTIONS.description}</td>
+    <td height="18">{TRANSACTIONS.date}</td>
+  </tr>
+  {/LOOP: TRANSACTIONS}
+          </table></td>
+      </tr>
+    </table>
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

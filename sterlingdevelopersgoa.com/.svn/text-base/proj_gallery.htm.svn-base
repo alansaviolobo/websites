@@ -1,0 +1,266 @@
+<html>
+    <!-- #BeginTemplate "/Templates/internal.dwt" --><!-- DW6 -->
+    <head>
+        <!-- #BeginEditable "doctitle" --><title>Sterling Residency Developers: Goa</title>
+        <!-- #EndEditable -->
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<script type="text/javascript" src="jquery.js">
+        </script>
+        <script type="text/javascript" src="jquery.lightbox-0.5.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css" media="screen" />
+        <script type="text/javascript">
+            $(function(){
+                $('#photo a').lightBox();
+            });
+        </script>
+        <style type="text/css">
+            /* jQuery lightBox plugin - Gallery style */
+            #gallery {
+                background-color: #444;
+                padding: 10px;
+                width: 520px;
+            }
+            
+            #gallery ul {
+                list-style: none;
+            }
+            
+            #gallery ul li {
+                display: inline;
+            }
+            
+            #gallery ul img {
+                border: 5px solid #3e3e3e;
+                border-width: 5px 5px 20px;
+            }
+            
+            #gallery ul a:hover img {
+                border: 5px solid #fff;
+                border-width: 5px 5px 20px;
+                color: #fff;
+            }
+            
+            #gallery ul a:hover {
+                color: #fff;
+            }
+        </style>
+        <script language="JavaScript">
+            <!--
+            function MM_swapImgRestore(){ //v3.0
+                var i, x, a = document.MM_sr;
+                for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) 
+                    x.src = x.oSrc;
+            }
+            
+            function MM_preloadImages(){ //v3.0
+                var d = document;
+                if (d.images) {
+                    if (!d.MM_p) 
+                        d.MM_p = new Array();
+                    var i, j = d.MM_p.length, a = MM_preloadImages.arguments;
+                    for (i = 0; i < a.length; i++) 
+                        if (a[i].indexOf("#") != 0) {
+                            d.MM_p[j] = new Image;
+                            d.MM_p[j++].src = a[i];
+                        }
+                }
+            }
+            
+            function MM_findObj(n, d){ //v4.0
+                var p, i, x;
+                if (!d) 
+                    d = document;
+                if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                    d = parent.frames[n.substring(p + 1)].document;
+                    n = n.substring(0, p);
+                }
+                if (!(x = d[n]) && d.all) 
+                    x = d.all[n];
+                for (i = 0; !x && i < d.forms.length; i++) 
+                    x = d.forms[i][n];
+                for (i = 0; !x && d.layers && i < d.layers.length; i++) 
+                    x = MM_findObj(n, d.layers[i].document);
+                if (!x && document.getElementById) 
+                    x = document.getElementById(n);
+                return x;
+            }
+            
+            function MM_swapImage(){ //v3.0
+                var i, j = 0, x, a = MM_swapImage.arguments;
+                document.MM_sr = new Array;
+                for (i = 0; i < (a.length - 2); i += 3) 
+                    if ((x = MM_findObj(a[i])) != null) {
+                        document.MM_sr[j++] = x;
+                        if (!x.oSrc) 
+                            x.oSrc = x.src;
+                        x.src = a[i + 2];
+                    }
+            }
+            
+            //-->
+        </script>
+        <link rel="stylesheet" href="sr.css" type="text/css">
+    </head>
+    <body bgcolor="#FFFFFF" text="#000000" background="images/bg.gif" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/butt_01_o.gif','images/butt_02_o.gif','images/butt_03_o.gif','images/butt_04_o.gif','images/butt_05_o.gif')">
+        <table width="780" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td valign="bottom">
+                                <img src="images/sr_heading_1.png" width="262" height="60">
+                            </td>
+                            <td>
+                                <div align="right" style="padding-right:30px;">
+                                    <img src="images/logo.png" width="55" height="50">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="780" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="262">
+                                <a href="index1.htm"><img src="images/sr_heading_2.png" width="262" height="58" border="0" alt="Back to home"></a>
+                            </td>
+                            <td>
+                                <a href="about.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/butt_01_o.gif',1)"><img name="Image3" border="0" src="images/butt_01.gif" width="98" height="58"></a><a href="projects.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/butt_02_o.gif',1)"><img name="Image4" border="0" src="images/butt_02.gif" width="98" height="58"></a><a href="proj_gallery.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/butt_03_o.gif',1)"><img name="Image5" border="0" src="images/butt_03.gif" width="99" height="58"></a><a href="contactus.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/butt_04_o.gif',1)"><img name="Image6" border="0" src="images/butt_04.gif" width="98" height="58"></a><a href="sitemap.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/butt_05_o.gif',1)"><img name="Image7" border="0" src="images/butt_05.gif" width="106" height="58"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="158">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="8" valign="top">
+                                <img src="images/int_left.gif" width="8" height="363">
+                            </td>
+                            <td valign="top" bgcolor="#FFFFFF">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td valign="top">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td height="39" background="images/int_bg.gif">
+                                                        <!-- #BeginEditable "bt" -->&nbsp;<a href="index1.htm" class="link">Home</a>
+                                                        <span class="content">&gt;&gt; </span>
+                                                        <span class="head">Project Gallery</span>
+                                                        <!-- #EndEditable -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="39">
+                                                        <!-- #BeginEditable "head" --><img src="images/project_gallery.gif" width="120" height="27"><!-- #EndEditable -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="184">
+                                            <img src="images/int_butto.gif" width="184" height="78" usemap="#Map" border="0" href="../enquiry.htm">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                                    <tr>
+                                        <td align="center">
+                                            <div id="photo">
+                                                <table border="0" cellspacing="3" cellpadding="3">
+                                                    <tr>
+                                                        <td>
+                                                            <a href="images/3dview/mainBldg.jpg"><img src="images/3dview/thumb1/mainBldg.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/lobby.jpg"><img src="images/3dview/thumb1/lobby.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/singleBed.jpg"><img src="images/3dview/thumb1/singleBed.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/pool.jpg"><img src="images/3dview/thumb1/pool.jpg"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="images/3dview/restaurant.jpg"><img src="images/3dview/thumb1/restaurant.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/conference.jpg"><img src="images/3dview/thumb1/conference.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/kitchen.jpg"><img src="images/3dview/thumb1/kitchen.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/suite.jpg"><img src="images/3dview/thumb1/suite.jpg"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="images/3dview/gym.jpg"><img src="images/3dview/thumb1/gym.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/office.jpg"><img src="images/3dview/thumb1/office.jpg"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="images/3dview/birdEye.jpg"><img src="images/3dview/thumb1/birdEye.jpg"></a>
+                                                        </td>
+                                                    </tr>
+                                                    </div>
+                                                </table>
+                                                </td>
+                                            </tr>
+                                            </table>
+                                        </td>
+                                        <td width="27" valign="top">
+                                            <img src="images/int_right.gif" width="27" height="363">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="8" valign="top">
+                                            &nbsp;
+                                        </td>
+                                        <td bgcolor="#FFFFFF" height="30">
+                                            <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                <tr>
+                                                    <td bgcolor="#C4CAE3" height="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="25">
+                                                        <div align="center" class="copyright">
+                                                            Copyright&copy; 2007/08 Sterlingdevelopersgoa.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site&nbsp;Powered By <a href="http://www.technotrix.co.in" class="copyright"><strong>Technotrix</strong></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="27" valign="top">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <map name="Map">
+                        <area shape="rect" coords="6,2,68,74" href="layout.htm">
+                            <area shape="rect" coords="68,2,125,72" href="3d_view.htm">
+                                <area shape="rect" coords="125,2,183,74" href="enquiry.htm">
+                                </map>
+								<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6083919-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+                            </body>
+                            <!-- #EndTemplate -->
+                            </html>

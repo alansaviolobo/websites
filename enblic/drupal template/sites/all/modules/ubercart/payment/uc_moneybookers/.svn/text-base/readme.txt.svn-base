@@ -1,0 +1,1 @@
+Install this module in the usual way. Once installed go to ubercart payment settings and enter your email, currency and secret word. Login to moneybookers and click merchant tools link and enter secret word here too. (There is no API authentication username and password needed leave this section blank).

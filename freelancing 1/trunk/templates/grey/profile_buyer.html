@@ -1,0 +1,87 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0" class="normal">
+  <tr>
+    <td valign="top"><br>      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><span class="header1"><span class="title2">{LANG_BUYERU} {LANG_PROFILE}</span></span></td>
+        <td align="right">IF("{MAILBOX_SHOW}"=="1"){<a href="{SITE_URL}private.php?cmd=send&toid={ID}&totype=buyer">{LANG_PRIVMSG}</a>{:IF}
+        IF("{SHOW_BLOCK}"=="1"){ <a href="{SITE_URL}blocked.php?add={ID}">{LANG_BLOCKUSER}</a>{:IF}
+          IF("{SHOW_UNBLOCK}"=="1"){ <a href="{SITE_URL}blocked.php?delete={ID}">{LANG_UNBLOCKUSER}</a>{:IF}</td>
+      </tr>
+    </table>
+    <br>      
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td style="padding-left:0px;"><strong>{LANG_USERNAME}</strong></td>
+          <td>{USERNAME}</td>
+        </tr>
+        <tr>
+          <td style="padding-left:0px;"><strong>{LANG_NAMECOM}</strong></td>
+          <td>{NAME}</td>
+        </tr>
+        {LOOP: PROFILE_CUSTOM}
+        <tr>
+          <td style="padding-left:0px;"><strong>{PROFILE_CUSTOM.title}</strong></td>
+          <td>{PROFILE_CUSTOM.value}</td>
+        </tr>
+         {/LOOP: PROFILE_CUSTOM}
+        <tr>
+          <td style="padding-left:0px;"><strong>{LANG_MEMBSINCE}</strong></td>
+          <td>{MEMBER_SINCE}</td>
+        </tr>
+        <tr>
+          <td style="padding-left:0px;"><strong>{LANG_RATING}</strong></td>
+          <td>
+		  IF("{REVIEWS}"=="0"){(No Feedback Yet){:IF}
+		  IF("{REVIEWS}"!="0"){<a href="{SITE_URL}reviews.php?id={ID}&type=buyers"><img border="0" src="{SITE_URL}templates/{TPL_NAME}/images/rating_{RATING}.gif"> ({REVIEWS} {LANG_REVIEWS})</a>{:IF}  
+		  </td>
+        </tr>
+        <tr>
+          <td style="padding-left:0px;" valign="top"><strong>{LANG_OPENPROJ}</strong></td>
+          <td>{LOOP: PROJECTS}- <a href="{PROJECTS.link}">{PROJECTS.title}</a><br>
+      {/LOOP: PROJECTS} </td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <span class="header1">{LANG_FEEDBACK}</span><br>
+      <br>
+
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr bgcolor="#C7C7C7">
+          <td width="100" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_PROVIDERU}</strong></td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_PROJNAME}</strong></td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td width="150" height="30" style="padding-left:5px;"><strong style="color:#666666;">{LANG_PROJDATE}</strong></td>
+		  <td width="1" bgcolor="#FFFFFF"></td>
+          <td width="100" style="padding-left:5px;" height="30"><strong style="color:#666666;">{LANG_RATING}</strong></td>
+        </tr>
+  {LOOP: REVIEWS}
+  <tr>
+    <td style="padding-left:5px;padding-top:3px;"><a href="{REVIEWS.user_link}">{REVIEWS.username}</a></td>
+	<td width="1" bgcolor="#FFFFFF"></td>
+    <td style="padding-left:5px;padding-top:3px;"><a href="{REVIEWS.link}">{REVIEWS.project_title}</a></td>
+	<td width="1" bgcolor="#FFFFFF"></td>
+    <td style="padding-left:5px;padding-top:3px;">IF("{REVIEWS.date}"==""){Project Removed{:IF}IF("{REVIEWS.date}"!=""){{REVIEWS.date} at {REVIEWS.time} {REVIEWS.timezone}{:IF}</td>
+	<td width="1" bgcolor="#FFFFFF"></td>
+    <td style="padding-left:5px;padding-top:3px;"><img border="0" src="{SITE_URL}templates/{TPL_NAME}/images/rating_{REVIEWS.rating}.gif"></td>
+  </tr>
+  <tr>
+    <td colspan="7" style="padding-bottom:5px;padding-top:5px;padding-left:5px;"><strong>{LANG_COMMENTS}: </strong> {REVIEWS.comment}</td>
+  </tr>
+  <tr height="1">
+    <td colspan="7" height="1" bgcolor="#C7C7C7" style="padding:0px;margin:0px;"></td>
+  </tr>
+  {/LOOP: REVIEWS}
+  IF("{REVIEWS}"=="0"){<tr><td colspan="7" align="center" height="30">{LANG_NOREVIEWS}</td></tr><tr height="1"><td colspan="7" height="1" bgcolor="#C7C7C7" style="padding:0px;margin:0px;"></td></tr>{:IF}
+      </table>
+      <br><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding-left:5px;">IF("{REVIEWS}"!="0"){<strong class="pagestitle">{LANG_SELPAGE}:</strong> {LOOP: PAGES}<a href="{PAGES.link}">{PAGES.title}</a> {/LOOP: PAGES}{:IF}<br>
+      <br></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

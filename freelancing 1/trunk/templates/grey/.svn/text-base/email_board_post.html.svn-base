@@ -1,0 +1,4 @@
+This message has been sent automatically by the {SITE_TITLE} system.
+If you need to contact us, go to {SITE_URL}contact.php
+-----------------------------------------
+A private message has been posted for you by {USER} on the message board for the project "{PROJECT_TITLE}". Go to the following URL to view and reply to this message: {SITE_URL}board.php?i={PROJECT_ID}

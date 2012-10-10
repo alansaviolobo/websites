@@ -1,0 +1,46 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>
+      <span class="header1">{LANG_BUYERU} {LANG_MANAGEACC}</span><br>
+      <br>
+      <span class="normal"><strong>{LANG_PICKPRO}:</strong></span><br>
+      <form name="form1" method="post" action="">
+        <table width="780" cellpadding="2" cellspacing="1" border="0">
+          <tr class="normal" bgcolor="#E1E1E1" align="center">
+            <td></td>
+            <td width="150" align="left"><strong>{LANG_PROVIDERU}</strong></td>
+            <td width="60"><div align="center"><strong>{LANG_BID}</strong></div></td>
+            <td width="100"><div align="center"><strong>{LANG_DELWITHIN}</strong></div></td>
+            <td><strong>{LANG_TIMEOFBID}</strong></td>
+            <td></td>
+          </tr>
+    {LOOP: BIDS}
+    <tr class="normal">
+      <td width="40"><div align="center">
+          <input name="bid_id" type="radio" value="{BIDS.bid_id}">
+      </div></td>
+      <td><a href="profile.php?id={BIDS.user_id}&type=provider">{BIDS.username}</a></td>
+      <td>{CURRENCY_SIGN}{BIDS.bid_amount}</td>
+      <td>{BIDS.bid_days} {LANG_DAYSB}</td>
+      <td>{BIDS.bid_date} {LANG_AT} {BIDS.bid_time} {BIDS.bid_timezone}</td>
+      <td></td>
+    </tr>
+    <tr class="normal">
+      <td></td>
+      <td colspan="5">{BIDS.bid_desc}</td>
+    </tr>
+    <tr>
+      <td colspan="6" height="1" background="templates/{TPL_NAME}/images/hline_dot.gif" style="padding:0px;"></TD>
+    </tr>
+    {/LOOP: BIDS}
+    <tr>
+      <td colspan="5"><input type="submit" name="Submit" value="{LANG_PICKBID}">
+          <input name="bid" type="hidden" id="bid" value="1">
+          <input name="id" type="hidden" id="id" value="{PROJECT_ID}"></td>
+    </tr>
+        </table>
+      </form>
+      <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

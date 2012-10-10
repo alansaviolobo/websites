@@ -1,0 +1,11 @@
+<div class="title"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">Post an Ad &gt;
+{city_name} &gt; {category_name}</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div style="clear: both; padding: 10px; font-size: 15px;">
+<div class="title2"><strong>Listing NOT POSTED</strong></div>
+<p>You have canceled the payment proccess so your listing was not
+posted.</p>
+</div>

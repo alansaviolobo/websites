@@ -1,0 +1,18 @@
+.menu-portion{
+	background:none;
+	height:160px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/menubackground.png', sizingMethod='scale');	
+}
+.content-logo{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/logo.png', sizingMethod='scale');	
+}
+.content{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/content_part_header.png', sizingMethod='scale');	
+}
+
+.footer-logo{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/footer-logo.png', sizingMethod='scale');	
+}

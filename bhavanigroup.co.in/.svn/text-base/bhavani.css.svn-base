@@ -1,0 +1,104 @@
+#container{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	width:75%;
+}
+
+
+#image{
+	display: block;
+        margin: -2px auto -5px auto;
+    	text-decoration: none;
+    	background-color: #ffffff;
+	border: 0;
+}
+
+#feedback{
+	text-align:right;
+	color:grey;
+	font-weight:bold;
+	padding:0.7em;
+	background-color:white;
+}
+
+a{
+	color:grey;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+#logo{
+	background-color:white;
+	color:white;
+	padding:40px 5px 0px 5px;
+}
+
+#mission{
+	border-color:rgb(212,212,212);
+	border-width: 3em;
+}
+
+th{
+	text-align:left;
+	color:rgb(0,85,12);
+	font-family:"Times New Roman",Georgia,Serif;
+	font-size:18px;
+	padding:0.7em;
+}
+
+#grey_heading{
+	color:rgb(59,59,59);
+}
+
+p{
+	text-align:justify;
+	font-family:"tahoma", sans-serif;
+	font-size:13px;
+	padding:1em;
+	line-height:25px;
+}
+
+
+#table2{
+	padding:0px;	
+	border-collapse:collapse;
+}
+
+
+body{
+	background-color:black;
+}
+
+#width703px{
+	width:200px;
+}
+
+#tableWoodType{
+	
+	border-color:Orange;
+	padding:1em;
+	margin: 3% -5% 5% 4%;
+	width:63%;
+	background-color:#FFEBCE;
+	font-style:italic
+}
+
+#footer{
+	font-size:small;
+	color:white;
+	text-align:center;
+	
+}
+
+#tablemenu{
+	border-color:white;
+	border-collapse:collapse;
+	background-color: white;
+	padding:0;	
+	margin:-2px auto auto auto;
+}

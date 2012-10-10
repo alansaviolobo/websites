@@ -1,0 +1,83 @@
+<h2>Active Members</h2>
+<table width="95%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="22%" class="date_title">Username</td>
+		<td width="17%" class="date_title">
+		<div align="center">Email</div>
+		</td>
+		<td width="21%" class="date_title">
+		<div align="center">Password</div>
+		</td>
+		<td width="22%" class="date_title">
+		<div align="center">Joined</div>
+		</td>
+		<td width="18%" class="date_title">&nbsp;</td>
+	</tr>
+
+	{users}
+	<tr>
+		<td>
+		<div class="listing_link" style="clear: both; float: left;"><a
+			href="{site_url}/reviews/view_reviews/{id}" target="_blank"
+			class="nyroModal">{username}</a></div>
+		</td>
+		<td>
+		<div align="center">{email}</div>
+		</td>
+		<td>
+		<div align="center">{password}</div>
+		</td>
+		<td>
+		<div align="center">{joined}</div>
+		</td>
+		<td>
+		<div style="float: right;"><strong><a
+			href="{site_url}/admin/users/edit/{id}" target="_blank" class="green">[edit]</a></strong>
+		&nbsp;&nbsp;<strong><a
+			href="{site_url}/admin/users/delete/{id}" class="green">[delete]</a></strong></div>
+		</td>
+	</tr>
+	{/users}
+</table>
+<h2>Members which are not active yet</h2>
+<table width="95%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="22%" class="date_title">Username</td>
+		<td width="17%" class="date_title">
+		<div align="center">Email</div>
+		</td>
+		<td width="21%" class="date_title">
+		<div align="center">Password</div>
+		</td>
+		<td width="22%" class="date_title">
+		<div align="center">Joined</div>
+		</td>
+		<td width="18%" class="date_title">&nbsp;</td>
+	</tr>
+	{nona_users}
+	<tr>
+		<td>
+		<div class="listing_link" style="clear: both; float: left;"><a
+			href="{site_url}/reviews/view_reviews/{id}" target="_blank"
+			class="nyroModal">{username}</a></div>
+		</td>
+		<td>
+		<div align="center">{email}</div>
+		</td>
+		<td>
+		<div align="center">{password}</div>
+		</td>
+		<td>
+		<div align="center">{joined}</div>
+		</td>
+		<td>
+		<div style="float: right;"><strong><a
+			href="{site_url}/admin/users/active/{id}" target="_blank"
+			class="green">[make active]</a></strong> &nbsp;&nbsp; <strong><a
+			href="{site_url}/admin/users/edit/{id}" target="_blank" class="green">[edit]</a></strong>
+		&nbsp;&nbsp; <strong><a
+			href="{site_url}/admin/users/delete/{id}" class="green">[delete]</a></strong></div>
+		</td>
+	</tr>
+	{/nona_users}
+</table>

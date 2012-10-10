@@ -1,0 +1,25 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">{SITENAME} > Resend
+activation</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<div>
+<form action="{site_url}/account/resend_activation/" method="post">
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td><strong>Email:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="email" type="text" id="email"
+			style="width: 420px;" value="{email}" />{error}
+		<div style="clear: both; padding-top: 10px; color: #FF0000;"><strong>
+		There is no account with that username in our database </strong></div>
+		{/error}</td>
+	</tr>
+</table>
+</div>
+
+<input name="submit" type="submit" value="  Continue  "
+	class="green_button" /></form>

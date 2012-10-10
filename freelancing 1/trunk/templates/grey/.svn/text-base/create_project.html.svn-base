@@ -1,0 +1,151 @@
+{OVERALL_HEADER}
+<SCRIPT LANGUAGE="JavaScript">
+function formValidation(form)
+{
+	if(notEmpty(form.project_name,"{LANG_PROJNAME}"))
+	{
+		if(notEmpty(form.project_description,"{LANG_PROJDESC}"))
+		{
+			if(notEmpty(form.days,"{LANG_BIDTIME}"))
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
+function notEmpty(elem,fname)
+{
+	var str = elem.value;
+	if(str.length == 0)
+	{
+		alert("You must fill in the "+fname+" field.");
+		return false;
+	} 
+	else 
+	{
+		return true;
+	}
+}
+</script>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top">      <form onSubmit="return formValidation(this)" action="" method="post" enctype="multipart/form-data" name="form">
+      {LOOP: ERRORS}<span class="error">- {ERRORS.message}</span><br>
+      {/LOOP: ERRORS} <br>
+      <table border="0" cellspacing="0" cellpadding="4" class="normal">
+        <tr>
+          <td><strong>{LANG_USERNAME}</strong></td>
+        </tr>
+        <tr>
+          <td>{USERNAME}</td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_PROJNAME}</strong></td>
+        </tr>
+        <tr>
+          <td><input name="project_name" type="text" id="project_name" size="40" maxlength="200" value="{PROJECTTITLE}"></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_PROJTYPE}</strong></td>
+        </tr>
+        <tr>
+          <td>
+		  <table border="0" cellpadding="0" cellspacing="0">
+		  {LOOP: JOBTYPES}
+		  IF("{JOBTYPES.ctype}"=="0"){<tr><td><input name="jobtype[{JOBTYPES.id}]" type="checkbox" value="{JOBTYPES.id}"></td><td> {JOBTYPES.title}</td></tr>{:IF}
+          IF("{JOBTYPES.ctype}"=="2"){<tr><td>&nbsp;&nbsp;<input name="jobtype[{JOBTYPES.id}]" type="checkbox" value="{JOBTYPES.id}"></td><td> {JOBTYPES.title}</td></tr>{:IF}
+          IF("{JOBTYPES.ctype}"=="1"){<tr><td colspan="2"><strong>{JOBTYPES.title}</strong></td></tr>{:IF}
+		  {/LOOP: JOBTYPES}
+		  </table>
+		  </td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_DATABASE}</strong></td>
+        </tr>
+        <tr>
+          <td><select name="dbtype" id="select3">
+            <option value="({LANG_NONE})" selected>({LANG_NONE})</option>
+            <option value="({LANG_PLEASESUGGEST})">({LANG_PLEASESUGGEST})</option>
+            <option value="MySQL">MySQL</option>
+            <option value="SQL">SQL</option>
+            <option value="MSQL">MSQL</option>
+            <option value="MS SQL">MS SQL</option>
+            <option value="PostgreSQL">PostgreSQL</option>
+            <option value="Oracle">Oracle</option>
+            <option value="LDAP">LDAP</option>
+            <option value="DBM">DBM</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_OPSYS}</strong></td>
+        </tr>
+        <tr>
+          <td><select name="ostype" id="select4">
+            <option selected>({LANG_DONTKNOW})</option>
+            <option>Unix</option>
+            <option>Linux</option>
+            <option>Solaris</option>
+            <option>Windows</option>
+            <option>(Other)</option>
+          </select></td>
+        </tr>
+        {LOOP: CUSTOMFIELDS}
+        <tr>
+          <td><strong>{CUSTOMFIELDS.title}</strong></td>
+        </tr>
+        <tr>
+          <td>
+          IF("{CUSTOMFIELDS.type}"=="text"){<input name="custom[{CUSTOMFIELDS.id}]" type="text" id="custom[{CUSTOMFIELDS.id}]" size="30" maxlength="{CUSTOMFIELDS.maxlength}" value="{CUSTOMFIELDS.default}">{:IF}
+          IF("{CUSTOMFIELDS.type}"=="select"){{CUSTOMFIELDS.selectbox}{:IF}
+          </td>
+        </tr>
+        {/LOOP: CUSTOMFIELDS}
+        <tr>
+          <td><strong>{LANG_PROJDESC}</strong></td>
+        </tr>
+        <tr>
+          <td><textarea name="project_description" cols="50" rows="9" id="textarea">{DESCRIPTION}</textarea></td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_ATTACHMENT}:</strong>
+            <input name="attachment" type="file" id="attachment2" size="40"> (Max. 500 KB)</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><strong>{LANG_BUDGET}</strong></td>
+        </tr>
+        <tr>
+          <td>{LANG_MIN}: {CURRENCY_SIGN}
+              <input name="budget_min" type="text" id="budget_min" size="8" value="{MINBUDGET}"></td>
+        </tr>
+        <tr>
+          <td>{LANG_MAX}: {CURRENCY_SIGN}
+              <input name="budget_max" type="text" id="budget_max" size="8" value="{MAXBUDGET}"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>{LANG_WANTBID} <input name="days" type="text" id="days" size="5" maxlength="2" value="{BIDDINGTIME}"> {LANG_DAYS}</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input name="featured" {FEATURED} type="checkbox" id="featured2" value="1"> {LANG_WANTPAY} {CURRENCY_SIGN}{FEATURED_PRICE} {LANG_WANTFEAT}</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="Submit" value="{LANG_SUBPROJECT}"></td>
+        </tr>
+      </table>
+    </form>    <br>
+    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

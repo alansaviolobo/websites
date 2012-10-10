@@ -1,0 +1,17 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" class="normal">      <br>
+      <form name="form1" method="post" action="">
+        <div align="left">{LANG_EDITPROJ}<br>
+            <br>
+            <textarea name="edit" cols="50" rows="6" id="edit"></textarea>
+            <br>
+            <input type="submit" name="Submit" value="{LANG_SUBMIT}">
+            <input name="id" type="hidden" id="id" value="{ID}">
+			<input name="type" type="hidden" id="type" value="{TYPE}">
+        </div>
+      </form>
+    <br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

@@ -1,0 +1,18 @@
+; $Id$
+name = Enblic
+description = Enblic theme
+screenshot = images/screenshot.png
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][text] = style.css
+
+conditional-stylesheets[if IE][all][] = ie.css
+
+scripts[] = iepngfix_tilebg.js
+
+regions[main_menu_region] = Main Menu
+regions[language_region] = Language Selector
+regions[footer_region] = Footer
+regions[upper_banner_region] = Upper Banner
+regions[lower_banner_region] = Lower Banner

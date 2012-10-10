@@ -1,0 +1,63 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="normal">
+    <td valign="top"><br>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="150" valign="top"><table width="95%"  border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                <td>- <a href="manage.php">{LANG_MANAGEACC}</a></td>
+             </tr>
+            <tr>
+              <td>- <a href="profile_edit.php">{LANG_EDITPROF}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="deposit.php">{LANG_DEPOSIT}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="withdraw.php">{LANG_WITHDRAW}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transfer.php">{LANG_TRANSFERM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="escrow.php">{LANG_ESCROWM}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="upgrade.php">{LANG_UPGRADES}</a></td>
+            </tr>
+            <tr>
+              <td>- <a href="transactions.php">{LANG_TRANSLOG}</a></td>
+            </tr>
+          </table></td>
+          <td class="normal"><span class="header1">{LANG_UPGRADES}</span><br>
+<br><br>
+<form name="form1" method="post" action="" style="padding:0px;margin:0px;">
+  <table border="0" cellspacing="1" cellpadding="5" class="normal">
+    <tr bgcolor="#E1E1E1">
+      <td colspan="2">{LANG_TITLE}</td>
+      <td>{LANG_COST}</td>
+    </tr>
+    {LOOP: SUB_TYPES}
+    <tr>
+      <td width="10" valign="top"><input checked name="upgrade" type="radio" value="{SUB_TYPES.id}"></td>
+      <td valign="top">{SUB_TYPES.title}</td>
+      <td valign="top">{CURRENCY_SIGN}{SUB_TYPES.cost}</td>
+    </tr>
+    {/LOOP: SUB_TYPES}
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input type="submit" name="Submitup" value="{LANG_UPGRADE}">
+  <br>
+  <br>
+  <br>
+</form>
+</td>
+        </tr>
+      </table>
+      </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

@@ -1,0 +1,61 @@
+10
+
+dir
+25
+https://readyscripts.googlecode.com/svn/trunk/classifieds%201/trunk/system
+https://readyscripts.googlecode.com/svn
+
+
+
+2009-08-19T16:12:15.904310Z
+4
+alansaviolobo@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3d9e0de8-8889-11de-b317-bf1d2adb44e4
+
+scaffolding
+dir
+
+plugins
+dir
+
+helpers
+dir
+
+language
+dir
+
+application
+dir
+
+cache
+dir
+
+database
+dir
+
+logs
+dir
+
+fonts
+dir
+
+codeigniter
+dir
+
+libraries
+dir
+

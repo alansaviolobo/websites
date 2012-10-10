@@ -1,0 +1,31 @@
+{OVERALL_HEADER}
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>      
+         <span class="title1">{LANG_TOP} {USER_TYPE}s</span><br><br>
+	  <table width="780" border="0" cellspacing="1" cellpadding="0">
+        <tr bgcolor="#E1E1E1" class="table_titles">
+          <td style="padding-left:5px;" width="40" height="18">#</td>
+          <td style="padding-left:5px;" width="200"><a href="{SITE_URL}topusers.php?type={UTYPE}&sort=username">{LANG_USERNAME}</a></td>
+          <td width="90" style="padding-left:5px;"><a href="{SITE_URL}topusers.php?type={UTYPE}&sort=rating">{LANG_RATING}</a></td>
+          <td style="padding-left:5px;"><a href="{SITE_URL}topusers.php?type={UTYPE}&sort=reviews">{LANG_REVIEWS}</a></td>
+        </tr>
+		{LOOP: USERS}
+        <tr>
+          <td style="padding-left:5px;"><span class="normtext">{USERS.count}</span></td>
+          <td style="padding-left:5px;"><a href="{SITE_URL}profile.php?id={USERS.id}&type={USERS.type}">{USERS.username}</a></td>
+          <td style="padding-left:5px;"><img border="0" src="{SITE_URL}templates/{TPL_NAME}/images/rating_{USERS.rating}.gif"></td>
+          <td style="padding-left:5px;"><span class="normtext">{USERS.reviews}</span></td>
+        </tr>
+	    <tr>
+		  <td colspan="4" background="{SITE_URL}templates/{TPL_NAME}/images/hline_dot.gif"><img src="{SITE_URL}templates/{TPL_NAME}/images/dot.gif" width="1" height="1" alt="" border="0"></td>
+	    </tr>
+		{/LOOP: USERS}
+      </table>
+	  <br /><br />
+      <strong>{LANG_PAGES}:</strong> {LOOP: PAGES}<a href="{PAGES.link}">{PAGES.title}</a> {/LOOP: PAGES}
+      <br /><br />
+    </td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

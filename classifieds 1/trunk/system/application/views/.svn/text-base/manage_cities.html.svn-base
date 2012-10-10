@@ -1,0 +1,18 @@
+{states}
+<div
+	style="clear: both; padding: 8px; height: 17px; margin-bottom: 3px;"
+	class="date_title">
+<div style="float: left;"><strong>{state_name}</strong></div>
+<div class="green" style="float: right;"><strong><a
+	href="{site_url}/admin/cities/add/{state_id}" target="_parent"
+	class="green" style="color: #FFFFFF; text-align: right;">[add_city]</a></strong></div>
+</div>
+{cities}
+<div style="clear: both; padding: 2px; margin-bottom: 3px;">
+<div style="padding-left: 10px; float: left;">{city_name}</div>
+<div style="float: right;"><strong><a
+	href="{site_url}/admin/cities/edit/{city_id}" target="_parent"
+	class="green">[edit]</a></strong> &nbsp;&nbsp;<strong><a
+	href="{site_url}/admin/cities/delete/{city_id}" class="green">[delete]</a></strong></div>
+</div>
+{/cities} {/states}

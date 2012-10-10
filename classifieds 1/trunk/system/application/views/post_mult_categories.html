@@ -1,0 +1,17 @@
+<div class="title2"
+	style="font-size: 13px; font-weight: bold; padding: 4px;">
+<div style="float: left; padding: 4px;">Post an Ad > Select State</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<form action="{site_url}/listings/add_mult/cities/1/" method="post">
+{cat_list}
+<div class="title2"
+	style="clear: both; padding: 10px; font-size: 15px; font-weight: bold;">{cat_name}</div>
+{sub_cat_list}
+<div class="city_div" style="color: #082139;"><input
+	name="category" type="radio" value="{sub_cat_id}" />{sub_cat_name}</div>
+{/sub_cat_list} {/cat_list} <input type="hidden" name="cities"
+	value="{cities}" />
+<div style="clear: both; padding-top: 15px;"><input type="submit"
+	value=" Submit " /></div>
+</form>

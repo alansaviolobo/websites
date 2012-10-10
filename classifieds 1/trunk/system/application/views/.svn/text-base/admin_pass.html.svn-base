@@ -1,0 +1,35 @@
+
+<form action="{site_url}/admin/change_pass/" method="post">
+<div class="gray_box listing_body">
+<table width="95%" border="0" cellspacing="0" cellpadding="4">
+	<tr class="listing_body">
+		<td><strong>Old password:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="old_pass" type="password" id="old_pass"
+			style="width: 420px;" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>New password:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="new_pass" type="password" id="pass"
+			style="width: 420px;" class="required_input" /></td>
+	</tr>
+	<tr class="listing_body">
+		<td><strong>New password again:</strong></td>
+	</tr>
+	<tr>
+		<td><input name="new_pass2" type="password" id="pass2"
+			style="width: 420px;" class="required_input" /></td>
+	</tr>
+	<tr>
+		<td>{error}{msg}{/error}</td>
+	</tr>
+</table>
+
+
+
+<input name="submit" type="submit" value=" Change  "
+	class="green_button" />
+</form>

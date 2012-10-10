@@ -1,0 +1,108 @@
+{OVERALL_HEADER}<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><br>
+      <span class="project_title_header">&nbsp;{LANG_PROJECT}:</span> <span class="project_title">{PROJECT_TITLE}</span><br>
+      <span class="normal"><strong>&nbsp;{LANG_ID}:</strong> {PROJECT_ID}</span><br>
+      <br>
+      <table width="100%" border="0" cellpadding="4" cellspacing="3">
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td width="180"><strong>{LANG_STATUS}: </strong></td>
+          <td>{PROJECT_STATUS}</td>
+        </tr>
+        <tr class="normal">
+          <td><strong>{LANG_BUDGET}: </strong></td>
+          <td>{PROJECT_BUDGET}</td>
+        </tr>
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td><strong>{LANG_CREATED}:</strong></td>
+          <td>{PROJECT_START_DATE} at {PROJECT_START_TIME} {PROJECT_START_TIMEZONE} </td>
+        </tr>
+        <tr class="normal">
+          <td><strong>{LANG_BIDENDS}:</strong></td>
+          <td>{PROJECT_END_DATE} at {PROJECT_END_TIME} {PROJECT_END_TIMEZONE} </td>
+        </tr>
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td><strong>{LANG_PROJCREATOR}:</strong></td>
+          <td><a href="{PROJECT_CREATOR_LINK}">{PROJECT_CREATOR_USERNAME}</a></td>
+        </tr>
+        <tr class="normal">
+          <td><strong>{LANG_RATING}: </strong></td>
+          <td>		  
+		  IF("{REVIEWS}"=="0"){({LANG_NOFEEDYET}){:IF}
+		  IF("{REVIEWS}"!="0"){<a href="{SITE_URL}reviews.php?id={PROJECT_CREATOR_ID}&type=buyers"><img border="0" src="{SITE_URL}templates/{TPL_NAME}/images/rating_{RATING}.gif"><br>({REVIEWS} {LANG_REVIEWS})</a>{:IF}  
+		  </td>
+        </tr>
+        <tr class="normal" bgcolor="#ECECEC" valign="top">
+          <td><strong>{LANG_DESC}:</strong></td>
+          <td> {PROJECT_DESC}</td>
+        </tr>
+        IF("{ATTACHMENT}" == "1"){<tr class="normal" valign="top"><td><strong>{LANG_ATTACHMENT}:</strong></td><td><a href="{SITE_URL}attachment.php?id={FILE_ID}">{FILE_NAME}</a></td></tr>{:IF}
+        <tr class="normal" IF("{ATTACHMENT}"=="1"){bgcolor="#ECECEC"{:IF} valign="top">
+          <td><strong>{LANG_JOBTYPE}: </strong></td>
+          <td> {LOOP: PROJECT_TYPES}-&nbsp;{PROJECT_TYPES.name}<br>
+    {/LOOP: PROJECT_TYPES} </td>
+        </tr>
+        <tr class="normal" IF("{ATTACHMENT}"=="0"){bgcolor="#ECECEC"{:IF} valign="top">
+          <td><strong>{LANG_DATABASE}: </strong></td>
+          <td>{PROJECT_DB}</td>
+        </tr>
+        <tr class="normal" IF("{ATTACHMENT}"=="1"){bgcolor="#ECECEC"{:IF}>
+          <td><strong>{LANG_OPSYS}: </strong></td>
+          <td>{PROJECT_OS}</td>
+        </tr>
+        {LOOP: PROJECT_CUSTOM}
+        <tr class="normal" IF("{PROJECT_CUSTOM.count}"%"2"){bgcolor="#ECECEC"{:IF}>
+          <td><strong>{PROJECT_CUSTOM.title}: </strong></td>
+          <td>{PROJECT_CUSTOM.value}</td>
+        </tr>
+        {/LOOP: PROJECT_CUSTOM}
+      </table>
+      <br>      <br>
+      <span class="normal"><a href="{SITE_URL}board.php?i={PROJECT_ID}">{LANG_VIEWMSGB}</a><br>
+{LANG_MESSPOSTED}: <strong>{MESSAGES}</strong></span><br>
+<br><br>
+<table width="780" cellpadding="0" cellspacing="1" border="0">
+  <tr>
+    <td colspan="5"> 
+	IF("{PROJECT_STATUS2}"=="open"){<a href="{SITE_URL}bid.php?id={PROJECT_ID}"><img src="{SITE_URL}templates/{TPL_NAME}/images/button_placebid.gif" width="76" height="16" alt="" border="0"></a><br><br>{:IF}
+	IF("{EDIT_BID}"=="1"){<a href="{SITE_URL}bid.php?id={PROJECT_ID}"><img src="{SITE_URL}templates/{TPL_NAME}/images/edit_bid.gif" width="76" height="16" alt="" border="0"></a><br><br>{:IF}
+</td>
+  </tr>
+  <tr class="normal" bgcolor="#E1E1E1" align="center">
+    <td width="300" align="left"><strong>{LANG_PROVIDERU}</strong></td>
+    <td width="60"><div align="center"><strong>{LANG_BID}</strong></div></td>
+    <td width="100"><div align="center"><strong>{LANG_DELWITHIN}</strong></div></td>
+    <td width="136"><strong>{LANG_TIMEOFBID}</strong></td>
+    <td width="136"><strong>{LANG_RATING}</strong></td>
+  </tr>
+  {LOOP: BIDS}
+  <tr class="normal">
+    <td><a href="{BIDS.link}">{BIDS.username}</a></td>
+    <td>{CURRENCY_SIGN}{BIDS.bid_amount}</td>
+    <td>{BIDS.bid_days} {LANG_DAYSB}</td>
+    <td>{BIDS.bid_date} {LANG_AT} {BIDS.bid_time} {BIDS.bid_timezone}</td>
+    <td><div align="center">
+		IF("{BIDS.bid_reviews}"=="0"){({LANG_NOFEEDYET}){:IF}
+		IF("{BIDS.bid_reviews}"!="0"){<a href="{SITE_URL}reviews.php?id={BIDS.user_id}&type=provider"><img border="0" src="{SITE_URL}templates/{TPL_NAME}/images/rating_{BIDS.bid_rating}.gif"><br>({BIDS.bid_reviews} {LANG_REVIEWS})</a>{:IF}  
+	</div></td>
+  </tr>
+  <tr class="normal">
+    <td colspan="5">{BIDS.bid_desc}
+    IF("{BIDS.file_id}"!="0"){<br /><br /><a href="{SITE_URL}attachment.php?id={BIDS.file_id}">Download Attachment</a>{:IF}
+    </td>
+  </tr>
+  <tr>
+    <Td colspan="5" height="1" background="{SITE_URL}templates/{TPL_NAME}/images/hline_dot.gif"></TD>
+  </tr>
+  {/LOOP: BIDS}
+  <tr>
+    <td colspan="5"><br>
+	IF("{PROJECT_STATUS2}"=="open"){<a href="{SITE_URL}bid.php?id={PROJECT_ID}"><img src="{SITE_URL}templates/{TPL_NAME}/images/button_placebid.gif" width="76" height="16" alt="" border="0"></a><br><br>{:IF}
+	IF("{EDIT_BID}"=="1"){<a href="{SITE_URL}bid.php?id={PROJECT_ID}"><img src="{SITE_URL}templates/{TPL_NAME}/images/edit_bid.gif" width="76" height="16" alt="" border="0"></a><br><br>{:IF}
+	</td>
+  </tr>
+</table>
+<br></td>
+  </tr>
+</table>
+{OVERALL_FOOTER}

@@ -1,0 +1,7 @@
+This message has been sent automatically by the {SITE_TITLE} system.
+If you need to contact us, go to {SITE_URL}contact.php
+-----------------------------------------
+The following project was recently added to {SITE_TITLE} and fits under your expertise:
+
+{PROJECT_TITLE}
+{SITE_URL}project.php?id={ID}

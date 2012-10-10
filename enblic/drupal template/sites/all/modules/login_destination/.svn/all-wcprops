@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maya_socialtheme/!svn/ver/51/drupal%20template/sites/all/modules/login_destination
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/maya_socialtheme/!svn/ver/51/drupal%20template/sites/all/modules/login_destination/LICENSE.txt
+END
+login_destination.info
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/maya_socialtheme/!svn/ver/80/drupal%20template/sites/all/modules/login_destination/login_destination.info
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/maya_socialtheme/!svn/ver/80/drupal%20template/sites/all/modules/login_destination/README.txt
+END
+login_destination.module
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/maya_socialtheme/!svn/ver/80/drupal%20template/sites/all/modules/login_destination/login_destination.module
+END
+login_destination.install
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/maya_socialtheme/!svn/ver/80/drupal%20template/sites/all/modules/login_destination/login_destination.install
+END

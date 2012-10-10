@@ -1,0 +1,13 @@
+name = Moneybookers
+description = Integrates various Moneybookers payment services and IPN feedback.
+dependencies[] = uc_payment
+package = Ubercart - payment
+core = 6.x
+php = 5.0
+
+version = "6.x-2.0-rc2"
+core = "6.x"
+project = "ubercart"
+datestamp = "1240953119"
+
+

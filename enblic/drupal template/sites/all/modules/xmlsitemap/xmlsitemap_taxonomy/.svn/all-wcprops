@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/maya_socialtheme/!svn/ver/75/drupal%20template/sites/all/modules/xmlsitemap/xmlsitemap_taxonomy
+END
+xmlsitemap_taxonomy.module
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/maya_socialtheme/!svn/ver/80/drupal%20template/sites/all/modules/xmlsitemap/xmlsitemap_taxonomy/xmlsitemap_taxonomy.module
+END
+xmlsitemap_taxonomy.install
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/maya_socialtheme/!svn/ver/75/drupal%20template/sites/all/modules/xmlsitemap/xmlsitemap_taxonomy/xmlsitemap_taxonomy.install
+END
+xmlsitemap_taxonomy.info
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/maya_socialtheme/!svn/ver/80/drupal%20template/sites/all/modules/xmlsitemap/xmlsitemap_taxonomy/xmlsitemap_taxonomy.info
+END

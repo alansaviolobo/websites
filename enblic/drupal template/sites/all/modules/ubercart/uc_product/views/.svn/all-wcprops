@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views
+END
+uc_product.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views/uc_product.views_default.inc
+END
+uc_product_handler_field_buyitnow.inc
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views/uc_product_handler_field_buyitnow.inc
+END
+uc_product_handler_field_price.inc
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views/uc_product_handler_field_price.inc
+END
+uc_product_handler_filter_product.inc
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views/uc_product_handler_filter_product.inc
+END
+uc_product_handler_field_addtocart.inc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views/uc_product_handler_field_addtocart.inc
+END
+uc_product_handler_field_weight.inc
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views/uc_product_handler_field_weight.inc
+END
+uc_product.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/maya_socialtheme/!svn/ver/63/drupal%20template/sites/all/modules/ubercart/uc_product/views/uc_product.views.inc
+END
