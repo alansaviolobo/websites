@@ -1,0 +1,10 @@
+; $Id$
+name = Technotrix
+description = Technotrix Orange theme
+screenshot = images/screenshot.png
+core = 6.x
+engine = phptemplate
+stylesheets[all][text] = style.css
+
+
+
